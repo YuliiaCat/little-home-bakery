@@ -28,7 +28,7 @@
                         <ul class="nav__list">
                             <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
                             <li class="nav__item"><a class="nav__link" href="./menu.html">Menu</a></li>
-                            <li class="nav__item"><a class="nav__link" href="./about-us.html" target="_blank">About
+                            <li class="nav__item"><a class="nav__link" href="#about-us">About
                                     us</a>
                             </li>
                             <li class="nav__item"><a class="nav__link" href="#">Gallery</a></li>
@@ -57,7 +57,7 @@
                                 <a class="burger-nav-link" href="./menu.html">Menu</a>
                             </li>
                             <li class="burger-nav-item">
-                                <a class="burger-nav-link" href="./about-us.html" target="_blank">About us</a>
+                                <a class="burger-nav-link" href="#about-us">About us</a>
                             </li>
                             <li class="burger-nav-item">
                                 <a class="burger-nav-link" href="#">Gallery</a>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section id="about-us">
                     <div class="container about-us-cont">
                         <h1 class="visually-hidden">About us</h1>
                         <div class="about-us-content">
@@ -96,60 +96,66 @@
                             </p>
                             <div style="clear: both;"></div>
                         </div>
+                        <div class="explore-menu-button">
+                            <a class="explore-menu-link" href="#menu">Explore menu</a>
+                        </div>
                     </div>
                 </section>
+                <section id="gallery">
+                    <div class="container gallery-container">
+                        <h2 class="gallery-title">Gallery</h2>
+                        <div class="gallery-mobile">
 
-        <!-- <section class="our-products">
-            <h2 class="our-products-title">Our products</h2>
-            <ul class="our-products-list">
-                <li><img class="our-products-item" src="./images/macaron.JPG" alt="Macaron">
-                </li>
-                <li><img class="our-products-item" src="./images/Mousse cake.JPG" alt="Cakes">
-                </li>
-                <li><img class="our-products-item" src="./images/cupcakes.jpg" alt="Cupcakes">
-                </li>
-                <li><img class="our-products-item" src="./images/gift box.JPG" alt="Gift-box">
-                </li>
-            </ul>
-            <nav class="our-products-nav">
-                <ul class="our-products-nav-list">
-                    <li class="our-products-nav-item"><a class="our-products-link" href="./menu.html#macarons-title"
-                            target=" _blank"><button class="button" type="button">Macarons</button></a>
-                    </li>
-                    <li class="our-products-nav-item"><a class="our-products-link" href="./menu.html#cakes-title"
-                            target="_blank"><button class="button" type="button">Cakes</button></a></li>
-                    <li class="our-products-nav-item"><a class="our-products-link" href="./menu.html#cupcakes-title"
-                            target="_blank"><button class="button" type="button">Cupcakes</button></a></li>
-                    <li class="our-products-nav-item"><a class="our-products-link" href="#" target="_blank"><button
-                                class="button" type="button">Gift box</button></a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="social-media-container">
-            <h2 class="social-media-title">Follow our latest news and updates</h2>
-            <p class="social-media-item"><a class="inst-link" href="https://www.instagram.com/little_home_bakery2023"
-                    target="_blank"><img class="inst-icon" src="./images/Instagram_icon.png" alt="inst-icon">
-                </a>
-                <a class="tiktok-link" href="https://www.tiktok.com/@little_home_bakery" target="_blank"><img
-                        class="tiktok-icon" src="./images/tiktok icon.png" alt="tiktok-icon">
-                </a>
-            </p>
-        </section>
-    </div>
-        </main>
-        <footer class="footer">
-            <h2 class="contact-info">Contact info</h2>
-            <ul class="contact-info-list">
-                <li class="contact-info-item"><img class="email-icon" src="./images/email-icon.png" alt="email">
-                    <a class="email-link"
-                        href="mailto:littlehomebakery2023@gmail.com">littlehomebakery2023@gmail.com</a>
-                </li>
-                <li class="contact-info-item"><img class="location-icon" src="./images/location-icon.png"
-                        alt="location-icon">
-                    Miami, USA</li>
-            </ul>
-            <p class="rights">&copy; Little Home Bakery. All Rights Reserved.
-            </p>
-        </footer> -->
+                        </div>
+
+                    </div>
+                </section>
+                <section id="social-media">
+                    <div class="social-media-container container">
+                        <h2 class="social-media-title">Follow our latest news and updates</h2>
+                        <div class="social-media-icons">
+                            <a class="social-icon-cont" href="https://www.instagram.com/little_home_bakery2023" target="_blank">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./src/images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                            <a class="social-icon-cont" href="https://www.facebook.com/@little_home_bakery" target="_blank">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href=".//src/images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <h2 class="contact-info-title">Contact info</h2>
+                    <ul class="contact-info-list">
+                        <li class="contact-info-item">
+                            <div class="footer-icon-cont">
+                                <svg class="footer-icon" width="22" height="22">
+                                    <use href="./src/images/icons.svg#icon-email"></use>
+                                </svg>
+                            </div>
+                            <a class="footer-link" href="mailto:littlehomebakery2023@gmail.com">
+                                littlehomebakery2023@gmail.com
+                            </a>
+                        </li>
+                        <li class="contact-info-item">
+                            <div class="footer-icon-cont">
+                                <svg class="footer-icon" width="18" height="18">
+                                    <use href="./src/images/icons.svg#icon-location"></use>
+                                </svg>
+                            </div>
+                            <a class="footer-link" href="#">
+                                Miami, USA
+                            </a>
+                        </li>
+                    </ul>
+                <p class="rights">&copy; Little Home Bakery. All Rights Reserved.</p>
+            </div>
+        </footer>
     </body>
 </html>
