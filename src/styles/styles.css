@@ -214,7 +214,7 @@ img {
       rgba(46, 47, 66, 0.2),
       rgba(46, 47, 66, 0.2)
     ),
-    url(../images/mango.JPG);
+    url(../images/megans.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -256,7 +256,7 @@ img {
 
   .hero-container {
     max-width: 550px;
-    padding: 30px;
+    padding: 50px;
   }
 }
 
