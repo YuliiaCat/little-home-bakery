@@ -51,7 +51,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 1440px;
     padding: 0 15px;
   }
 }
@@ -67,6 +67,13 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   padding: 20px 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .top-bar {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .header-logo {
@@ -116,16 +123,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
+   width: 24px;
   height: 24px;
 }
-
+  
 .icon-menu {
   fill: #2e2f42;
 }
 
-@media (min-width:768px) {
-  .icon-solid-cont {
+@media screen and (min-width: 1024px) {
+  .icon-menu-cont {
     display: none;
   }
 }
@@ -192,10 +199,16 @@ img {
 /* HERO */
 .hero {
   padding: 100px 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
+    flex-direction: row;
+    justify-content: left;
     background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.2),
@@ -206,6 +219,7 @@ img {
     background-position: right;
     background-size: cover;
     background-size: 50% 100%;
+    padding: 100px 30px 100px;
   }
 }
 
@@ -219,22 +233,25 @@ img {
   gap: 65px;
 }
 
-
 @media screen and (min-width: 768px) {
   .hero-container {
     max-width: 400px;
   }
 }
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 200px 0 200px;
+    gap: 90px;
   }
 
   .hero-container {
-    justify-content: right;
-    align-items: flex-start;
+    max-width: 550px;
+    margin: 0;
   }
-} */
+}
 
 .hero-title {
   text-align: center;
@@ -321,9 +338,12 @@ img {
 /* HERO END */
 
 /* ABOUT US */
-.about-us-cont {
+.about-us {
   padding: 0 0 100px;
   background-color: #f8f8f8;
+}
+
+.about-us-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,6 +400,27 @@ img {
   .about-us-desc {
     font-size: 18px;
     padding: 70px 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .desktop-pict {
+    display: none;
+  }
+}
+
+.desktop-pict {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (min-width: 1024px) {
+  .about-us-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
 
