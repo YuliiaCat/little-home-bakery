@@ -234,8 +234,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    margin: 0 auto;
+    padding: 150px 0 150px;
+    gap: 80px;
+  }
+
   .hero-container {
-    max-width: 400px;
+    max-width: 450px;
+    margin: 0;
   }
 }
 
@@ -249,7 +256,7 @@ img {
 
   .hero-container {
     max-width: 550px;
-    margin: 0;
+    padding: 30px;
   }
 }
 
@@ -403,6 +410,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .about-us-desc {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .desktop-pict {
     display: none;
@@ -410,6 +423,8 @@ img {
 }
 
 .desktop-pict {
+  width: 100%;
+  background-size: cover;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -465,8 +480,22 @@ img {
   font-family: "Dancing Script", cursive;
   font-size: 35px;
   letter-spacing: 0.01em;
+  margin-bottom: 50px;
 }
 
+.gallery-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.gallery-photo {
+  width: 350px;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
+}
 
 /* GALLERY END */
 
