@@ -63,7 +63,7 @@ img {
   justify-content: space-between;
   background-color: white;
   border-top: 1px solid rgba(46, 47, 66, 0.08);
-      box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   padding: 20px 30px;
@@ -107,16 +107,6 @@ img {
   text-decoration: none;
   color: black;
   margin: 0;
-}
-
-.nav-pages {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  height: 80px;
-  border: 5px solid pink;
 }
 
 .icon-menu-cont {
@@ -473,7 +463,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 70px 0;
+  padding: 70px 20px;
 }
 
 .gallery-title {
@@ -483,18 +473,47 @@ img {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1024px) {
+  .gallery-title {
+    font-size: 50px;
+  }
+}
+
 .gallery-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 15px;
 }
 
 .gallery-photo {
-  width: 350px;
+  width: 100%;
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .gallery-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-list  {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gallery-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 /* GALLERY END */
@@ -602,48 +621,63 @@ img {
 
 /* Pages Pages Pages Pages */
 
-/* Menu */
+/* MENU */
+
 .box-pages {
-  display: block;
-  height: 250px;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
+
 .title-logo-pages {
-  display: block;
   width: 250px;
-  object-fit: cover;
-  object-position: center;
-  margin: 0 auto;
 }
+
+.nav-pages {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    margin-bottom: 40px;
+}
+
 .menu-title {
   text-align: center;
   font-size: 70px;
-  padding-top: 40px;
   font-family: "Dancing Script", cursive;
+  margin-bottom: 40px;
 }
-.macarons-wrap {
-  padding-top: 40px;
-}
+
 #macarons-title {
-  height: 140px;
+  height: 200px;
   text-align: center;
   font-size: 70px;
-  background-image: url("./images/macarons-background-image.jpg");
+  background-image: url("../images/about-us.jpg");
   background-size: cover;
-  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 50px 0;
   letter-spacing: 1px;
   color: #f5fffa;
   font-weight: bold;
   -webkit-text-stroke: 1px #70e0b3;
   margin-bottom: 0;
 }
+
 .macarons-container {
   display: flex;
 }
+
 .macarons-block {
   display: inline-block;
   margin: 0;
-  border: 5px solid pink;
+  border: 1px solid rgba(46, 47, 66, 0.1);
   padding-top: 0;
   width: 50%;
   height: 450px;
@@ -661,11 +695,12 @@ img {
 }
 
 #cakes-title {
-  height: 140px;
+  height: 200px;
   text-align: center;
   font-size: 70px;
-  background-image: url("./images/cakes.jpg");
+  background-image: url("../images/gallery-page/mouse-cake.JPG");
   background-size: cover;
+  background-position: center;
   letter-spacing: 1px;
   color: #f5fffa;
   font-weight: bold;
@@ -686,11 +721,12 @@ img {
   padding-top: 0px;
 }
 #cupcakes-title {
-  height: 140px;
+  height: 200px;
   text-align: center;
   font-size: 70px;
-  background-image: url("./images/cupcakes-bc.JPG");
+  background-image: url("../images/cupcakes-bcg.jpg");
   background-size: cover;
+  background-position: center;
   letter-spacing: 1px;
   color: #f5fffa;
   font-weight: bold;
