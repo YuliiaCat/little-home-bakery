@@ -200,15 +200,13 @@ img {
     flex-direction: row;
     justify-content: left;
     background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.2),
-      rgba(46, 47, 66, 0.2)
-    ),
-    url(../images/megans.png);
-    background-repeat: no-repeat;
-    background-position: right;
+      to right, lavenderblush 0%, lavenderblush 50%,
+      transparent 50%,
+      transparent 100%), 
+      url(../images/background.JPG);
+      background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-size: 50% 100%;
     padding: 100px 30px 100px;
   }
 }
