@@ -63,6 +63,7 @@ img {
   justify-content: space-between;
   background-color: white;
   border-top: 1px solid rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid rgba(46, 47, 66, 0.08);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -71,8 +72,9 @@ img {
 
 @media screen and (min-width: 1024px) {
   .top-bar {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
+    box-shadow: none;
   }
 }
 
@@ -203,7 +205,7 @@ img {
       to right, lavenderblush 0%, lavenderblush 50%,
       transparent 50%,
       transparent 100%), 
-      url(../images/background.JPG);
+      url(../images/background-main.jpg);
       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -238,7 +240,7 @@ img {
   .hero {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 200px 0 200px;
+    padding: 150px 0 200px;
     gap: 90px;
   }
 
