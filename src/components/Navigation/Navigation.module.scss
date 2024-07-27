@@ -1,0 +1,17 @@
+.navList {
+  display: none;
+
+  @include on-desktop {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+  }
+}
+
+.navLink {
+  font-size: 25px;
+  color: $main-text-color;
+  padding: 30px 0;
+
+  @include hover(text-shadow, 0 2px 15px $pink-color);
+}

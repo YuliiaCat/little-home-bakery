@@ -1,20 +1,41 @@
 @font-face {
-  font-family: Mont, sans-serif;
-  src: url('/fonts/Mont-Regular.otf') format('opentype');
-  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  src: url('/fonts/PlayfairDisplay-Regular.ttf') format('ttf');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Mont, sans-serif;
-  src: url('/fonts/Mont-SemiBold.otf') format('opentype');
+  font-family: "Playfair Display", serif;
+  src: url('/fonts/PlayfairDisplay-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display", serif;
+  src: url('/public/fonts/PlayfairDisplay-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Mont, sans-serif;
-  src: url('/fonts/Mont-Bold.otf') format('opentype');
-  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+  src: url('/fonts/DancingScript-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dancing Script", cursive;
+  src: url('/fonts/DancingScript-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dancing Script", cursive;
+  src: url('/fonts/DancingScript-Bold.ttf') format('ttf');
+  font-weight: 700;
   font-style: normal;
 }

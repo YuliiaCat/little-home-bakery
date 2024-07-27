@@ -1,6 +1,5 @@
-// @import './mixins';
+@import './mixins';
 @import './variables';
-@import './icon';
 
 *,
 *::before,
@@ -9,7 +8,7 @@
 }
 
 html {
-  // font-family: $main-font-family;
+  font-family: $main-font-family;
   scroll-behavior: smooth;
 
   // input:-webkit-autofill,
@@ -27,24 +26,16 @@ html {
   // }
 }
 
-body,
 html {
-  margin: 0;
-  height: 100%;
+  font-family: $main-font-family;
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   min-width: 320px;
-  color: red;
-  // background-color: $c-main-theme;
-}
-
-main {
-  min-height: calc(100vh - 257px);
-
-  // @include on-tablet {
-  //   min-height: calc(100vh - 96px);
-  // }
+  color: $main-text-color;
+  background-color: $bgc-theme;
 }
 
 h1,
@@ -78,27 +69,22 @@ img {
   height: auto;
 }
 
-// .container {
-//   padding-left: $padding-mobile;
-//   padding-right: $padding-mobile;
+.container {
+  max-width: $mobile-max-width;
+  margin: 0 auto;
+  overflow: hidden;
 
-//   @include on-tablet {
-//     padding-left: $padding-tablet;
-//     padding-right: $padding-tablet;
-//   }
+  @include on-tablet {
+    min-width: $tablet-min-width;
+    max-width: $tablet-max-width;
+  }
 
-//   @include on-desktop-small {
-//     padding-left: $padding-desktop-small;
-//     padding-right: $padding-desktop-small;
-//   }
-
-//     @include on-desktop {
-//     padding-left: $padding-desktop;
-//     padding-right: $padding-desktop;
-//     max-width: 1440px;
-//     margin: auto;
-//   }
-// }
+  @include on-desktop {
+    min-width: $desktop-min-width;
+    max-width: $desktop-max-width;
+    padding: 100px 30px;
+  }
+}
 
 .is-active {
   // color: $main-white-color;
@@ -121,4 +107,10 @@ img {
   transition: max-height 0.3s ease-in-out;
 }
 
+.swiper .swiper-pagination-bullet {
+  background-color: #f5fffa;
+  width: 12px;
+  height: 12px;
+  border: 1px solid $dark-grey-color;
+} 
 

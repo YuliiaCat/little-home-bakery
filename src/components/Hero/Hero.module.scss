@@ -1,0 +1,117 @@
+.hero {
+  padding: 100px 0 100px;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(
+      to right,
+      lavenderblush 0%,
+      transparent 50%,
+      transparent 100%
+    ),
+    url('/img/background-main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include on-tablet {
+    padding: 150px 0 150px;
+  }
+
+  @include on-desktop {
+    justify-content: left;
+    gap: 90px;
+  }
+
+  @include on-desktop-xl {
+    padding-top: 200px;
+  }
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  gap: 65px;
+
+  @include on-tablet {
+    max-width: 500px;
+    padding-left: 70px;
+    padding-right: 0;
+  }
+
+  @include on-desktop {
+    justify-self: start;
+    max-width: 650px;
+    padding: 50px 0 50px 80px;
+    margin: 0;
+  }
+
+  @include on-desktop-xl {
+    max-width: 800px;
+    padding-left: 120px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  font-family: $dancing-font;
+
+  @include on-tablet {
+    font-size: 50px;
+  }
+
+  @include on-desktop {
+    font-size: 65px;
+  }
+
+  @include on-desktop-xl {
+    font-size: 70px;
+  }
+}
+
+.text {
+  font-family: $dancing-font;
+  font-size: 25px;
+  text-align: center;
+
+  @include on-tablet {
+    font-size: 30px;
+  }
+
+  @include on-desktop {
+    font-size: 40px;
+  }
+}
+
+.learnMoreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pink-color;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid $dark-grey-color;
+  box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  @include hover(background-color, $light-freen-color);
+
+  &:focus {
+    background-color: $light-freen-color;
+  }
+}
+
+.learnMoreLink {
+  font-family: inherit;
+  font-size: 20px;
+  text-decoration: none;
+  color: $main-text-color;
+}
