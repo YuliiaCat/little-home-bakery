@@ -33,28 +33,28 @@ const SwiperComp = () => {
       <SwiperSlide>
         <img
           className={styles.img}
-          src="/img/about-us/about-us-1.webp"
+          src="./img/about-us/about-us-1.webp"
           alt="About-us"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           className={styles.img}
-          src="/img/about-us/about-us-2.webp"
+          src="./img/about-us/about-us-2.webp"
           alt="About us"
           />
       </SwiperSlide>
       <SwiperSlide>
         <img
           className={styles.img}
-          src="/img/about-us/about-us-3.webp"
+          src="./img/about-us/about-us-3.webp"
           alt="about-us-pict"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           className={styles.img}
-          src="/img/about-us/about-us-4.webp"
+          src="./img/about-us/about-us-4.webp"
           alt="about-us-pict"
         />
       </SwiperSlide>
