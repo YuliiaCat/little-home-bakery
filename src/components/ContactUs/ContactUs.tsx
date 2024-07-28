@@ -3,7 +3,7 @@ import styles from './ContactUs.module.scss';
 
 const ContactUs = () => {
   return (
-    <section id="contact-us" className={styles.contact}>
+    <section id="contactUs" className={styles.contact}>
       <div className={`container ${styles.contactUs}`}>
         <div className={styles.infoBox}>
           <svg className={styles.icon}>
