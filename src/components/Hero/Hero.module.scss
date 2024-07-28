@@ -102,10 +102,10 @@
     0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
-  @include hover(background-color, $light-freen-color);
+  @include hover(background-color, $light-green-color);
 
   &:focus {
-    background-color: $light-freen-color;
+    background-color: $light-green-color;
   }
 }
 

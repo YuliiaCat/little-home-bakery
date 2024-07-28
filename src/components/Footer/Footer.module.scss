@@ -1,0 +1,69 @@
+.footer {
+  background-color: $button-bcg;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include on-tablet {
+    
+  }
+}
+
+.logo {
+  width: 250px;
+  height: 60px;
+  background-image: url('/img/logo.webp');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+
+  @include on-tablet {
+    width: 260px;
+    height: 80px;
+  }
+}
+
+.title {
+  color: $main-text-color;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.iconCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pink-color;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $card-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include hover(background-color, $bright-pink-color, border-color, $bright-pink-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: $very-light-green-color;
+}
+
+.link {
+  color: inherit;
+  font-size: 18px;
+}
+

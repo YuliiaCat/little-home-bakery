@@ -1,8 +1,6 @@
+import SwiperComp from '../SwiperComp/SwiperComp';
 import styles from './AboutUs.module.scss';
-import 'swiper/scss';
-import 'swiper/scss/pagination';
-import { Autoplay, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -10,90 +8,26 @@ const AboutUs = () => {
       <div className={`container ${styles.aboutUsCont}`}>
         <h1 className="visually-hidden">About us</h1>
         <div className={styles.content}>
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={1}
-            modules={[Autoplay, Pagination]}
-            speed={1000}
-            wrapperClass={styles.swiperList}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: true,
-              pauseOnMouseEnter: true,
-            }}
-            pagination={{
-              dynamicBullets: true,
-              clickable: true,
-            }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 16,
-                loop: true,
-              },
+          <SwiperComp />
 
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 16,
-                loop: false,
-              },
+        <img className={styles.imgFirst} src="/img/about-us/about-us-1.webp" alt="Macaron" />
 
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 16,
-                loop: false,
-              },
-
-              1550: {
-                slidesPerView: 4,
-                spaceBetween: 16,
-                loop: false,
-              },
-            }}
-            className={styles.swiperAbout}
-          >
-            <SwiperSlide>
-              <img
-                className={styles.img}
-                src="/img/about-us/about-us-1.webp"
-                alt="About-us"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className={styles.img}
-                src="/img/about-us/about-us-2.webp"
-                alt="About us"
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className={styles.img}
-                src="/img/about-us/about-us-3.webp"
-                alt="about-us-pict"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className={styles.img}
-                src="/img/about-us/about-us-4.webp"
-                alt="about-us-pict"
-              />
-            </SwiperSlide>
-          </Swiper>
-
-          <p className="about-us-desc">Welcome to our bakery! Treat yourself to our delicious macarons with wonderful
-            flavors and a satisfying crunch.
-            Experience the beauty of our cakes, each one a masterpiece of taste and design.
-            Whether you love macarons or cakes, our bakery is the perfect spot for tasty treats.
-            Check out our menu and take home some artisanal baked goods.
+          <p className={styles.description}><span className={styles.welcome}>Welcome to our bakery!</span> Discover the joy of fresh, delicious baked goods made with love.
+            From macarons and cakes to eclairs, everything is crafted with the best ingredients.
+            Check out our menu and enjoy the warmth and charm of our bakery.
           </p>
 
+          <img className={styles.img} src="/img/about-us/about-us-4.webp" alt="Macaron" />
         </div>
-        <div className="explore-menu-button">
-          <a className="explore-menu-link" href="#menu">Explore menu</a>
+        <div className={styles.exploreMenuBtn}>
+          <Link className={styles.exploreMenuLink} to="/menu">Explore menu</Link>
         </div>
+
+        <div className={styles.picturesBlock}>
+          <img className={styles.pictWide} src="/img/about-us/about-us-pict-1.webp" alt="About us" />
+          <img className={styles.pict1} src="/img/about-us/about-us-2.webp" alt="Macaron" />
         </div>
+      </div>
     </section>
   );
 };

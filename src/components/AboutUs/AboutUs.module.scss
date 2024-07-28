@@ -1,9 +1,8 @@
 .aboutUs {
-  padding: 100px 0 100px;
   background-color: $very-light-green-color;
 
   @include on-tablet {
-    padding: 150px 0;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -15,7 +14,12 @@
   gap: 50px;
 
   @include on-tablet {
-    gap: 100px;
+    display: grid;
+    --columns: 9;
+    column-gap: 16px;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 0;
+    gap: 10px 16px;
   }
 }
 
@@ -24,99 +28,116 @@
   border-top: none;
   border-radius: 4px;
   max-width: 320px;
+
+  @include on-tablet {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1 / -1;
+    max-width: 100%;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
 }
 
-.img {
-  display: block;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border: 1px solid $main-text-color;
-}
-
-.swiperAbout {
-  margin-bottom: 30px;
-}
-
-.about-us-desc {
+.description {
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
   letter-spacing: 0.02em;
   padding: 45px 20px;
+
+  @include on-tablet {
+    grid-column: 4 / span 3;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0 10px;
+    grid-row: 1;
+  }
+
+  @include on-desktop {
+    font-size: 22px;
+  }
+
+  @include on-desktop-xl {
+    font-size: 24px;
+  }
 }
 
-.explore-menu-button {
+.exploreMenuBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ebedee;
+  background-color: $very-light-blue-color;
   border-radius: 40px;
   width: 220px;
   height: 50px;
   cursor: pointer;
-  border: 1px solid grey;
+  border: 1px solid $dark-grey-color;
   box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: all 0.3s ease-in-out;
+
+  @include hover(background-color, $light-green-color);
+
+  &:focus {
+    background-color: $light-green-color;
+  }
+
+  @include on-tablet {
+    grid-column: 5 / -5;
+    margin-bottom: 30px;
+    grid-row: 1;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
 }
 
-.explore-menu-link {
-  font-family: "Playfair Display", serif;
+.exploreMenuLink {
   font-size: 20px;
   text-decoration: none;
-  color: #2e2f42;
+  color: $main-text-color;
 }
 
-.explore-menu-button:focus,
-.explore-menu-button:hover {
-  background-color: #f5fffa;
-}
+.img,
+.imgFirst {
+  display: none;
 
-.swiper .swiper-button {
-  color: #f5fffa;
-}
-
-.swiper .swiper-pagination-bullet {
-  background-color: #f5fffa;
-}
-
-@media screen and (min-width: 500px) {
-  .about-us-content {
-    max-width: 400px;
+  @include on-tablet {
+    display: block;
+    grid-column: 7 / span 3;
+    grid-row: 1;
   }
 }
 
-@media screen and (min-width: 768px) {
-
-  .about-us-content {
-    max-width: 700px;
-  }
-
-  .about-us-desc {
-    font-size: 20px;
-    padding: 70px 20px;
+.imgFirst {
+  @include on-tablet {
+    grid-column: 1 / span 3;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .about-us-desc {
-    font-size: 22px;
-  }
-
-  .about-us-pictures {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.welcome {
+  @include on-tablet {
+    font-family: $dancing-font;
+    font-weight: 700;
+    font-size: 33px;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .about-us-content {
-    max-width: 1200px;
-  }
+.picturesBlock {
+  display: none;
 
-  .about-us-desc {
-    font-size: 24px;
+  @include on-tablet {
+    display: contents;
+    grid-column: 1 / -1;
   }
+}
+
+.pictWide {
+  @include on-tablet {
+    grid-column: 1 / span 5;
+  }
+}
+
+.pict1 {
+  grid-column: 6 / span 4;
 }

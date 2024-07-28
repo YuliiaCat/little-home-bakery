@@ -70,11 +70,13 @@ img {
 }
 
 .container {
+  padding: 50px 16px;
   max-width: $mobile-max-width;
   margin: 0 auto;
   overflow: hidden;
 
   @include on-tablet {
+    padding: 40px 20px;
     min-width: $tablet-min-width;
     max-width: $tablet-max-width;
   }
@@ -107,8 +109,14 @@ img {
   transition: max-height 0.3s ease-in-out;
 }
 
+.swiper {
+  @include on-tablet {
+    display: none;
+  }
+}
+
 .swiper .swiper-pagination-bullet {
-  background-color: #f5fffa;
+  background-color: $light-green-color;
   width: 12px;
   height: 12px;
   border: 1px solid $dark-grey-color;

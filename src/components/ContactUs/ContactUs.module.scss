@@ -1,0 +1,68 @@
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: $card-color;
+}
+
+.infoBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+  background-color: $very-light-green-color;
+  padding: 30px 20px;
+
+  &:last-of-type {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+}
+
+.iconsWrap {
+  border: 1px solid $link-color;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+  border-radius: 10px;
+
+  @include hover(background-color, $button-bcg);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  fill: $card-color;
+  stroke: $card-color;
+}
+
+.title {
+  font-family: $dancing-font;
+  text-transform: uppercase;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.email {
+  width: 100%;
+  text-align: center;
+  padding: 15px 40px;
+  background-color: $button-bcg;
+  text-transform: uppercase;
+  color: $link-color;
+  font-size: 18px;
+  border: 1px solid $card-color;
+  cursor: pointer;
+
+  @include hover(background-color, transparent);
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
