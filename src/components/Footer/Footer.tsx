@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className={`container ${styles.footer}`}>
+    <footer className={styles.footer}>
       <Link className={styles.logo} to="/"></Link>
       <h2 className={styles.title}>Contact info</h2>
       <ul className={styles.list}>
