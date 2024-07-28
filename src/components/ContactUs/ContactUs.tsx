@@ -3,7 +3,7 @@ import styles from './ContactUs.module.scss';
 
 const ContactUs = () => {
   return (
-    <section id="contact-us" className={styles.contactUs}>
+    <section id="contact-us" className={styles.contact}>
       <div className={`container ${styles.contactUs}`}>
         <div className={styles.infoBox}>
           <svg className={styles.icon}>
@@ -13,7 +13,7 @@ const ContactUs = () => {
           <p className={styles.text}>If you have any questions about Ladurée, please send an email.</p>
           <Link className={styles.email} to="mailto:littlehomebakery2023@gmail.com">
             Get in touch
-        </Link>
+          </Link>
         </div>
         <div className={styles.infoBox}>
           <div className={styles.icons}>

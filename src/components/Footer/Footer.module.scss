@@ -4,8 +4,9 @@
   flex-direction: column;
   gap: 15px;
 
-  @include on-tablet {
-    
+  @include on-desktop {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 24px;
   color: $card-color;
+
+  @include on-tablet {
+    flex-direction: row;
+  }
 }
 
 .infoBox {
