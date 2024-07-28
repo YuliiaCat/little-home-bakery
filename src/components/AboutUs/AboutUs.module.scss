@@ -18,8 +18,11 @@
     --columns: 9;
     column-gap: 16px;
     grid-template-columns: repeat(var(--columns), 1fr);
-    gap: 0;
     gap: 10px 16px;
+  }
+
+  @include on-desktop {
+    gap: 16px;
   }
 }
 
@@ -142,10 +145,38 @@
   @include on-desktop {
     grid-column: 1 / span 3;
     align-self: flex-start;
+    grid-row: 2;
   }
 }
 
 .pict1 {
   grid-column: 7 / span 3;
   height: 100%;
+
+  @include on-desktop {
+    grid-row: 2 / 3;
+  }
+}
+
+.pict2 {
+  display: none;
+
+  @include on-desktop {
+    display: block;
+    grid-column: 4 / span 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.pict3 {
+  display: none;
+
+  @include on-desktop {
+    display: block;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    align-self: flex-end;
+    height: 47%;
+    width: 100%;
+  }
 }

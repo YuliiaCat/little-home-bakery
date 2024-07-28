@@ -25,6 +25,8 @@ const AboutUs = () => {
 
         <div className={styles.picturesBlock}>
           <img className={styles.pictWide} src="/img/about-us/about-us-pict-1.webp" alt="About us" />
+          <img className={styles.pict3} src="/img/about-us/about-us-6.webp" alt="Macaron" />
+          <img className={styles.pict2} src="/img/about-us/about-us-5.webp" alt="Macaron" />
           <img className={styles.pict1} src="/img/about-us/about-us-2.webp" alt="Macaron" />
         </div>
       </div>
