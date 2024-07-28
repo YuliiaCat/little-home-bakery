@@ -8,7 +8,7 @@ import NotFoundPage from './pages/NotFoundPage.tsx';
 
 const Root = () => (
   <React.StrictMode>
-    <Router>
+    <Router basename={import.meta.env.BASE_URL} >
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<HomePage />} />

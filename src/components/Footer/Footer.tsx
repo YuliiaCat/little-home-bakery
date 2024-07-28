@@ -10,7 +10,7 @@ const Footer = () => {
         <li className={styles.item}>
           <div className={styles.iconCont}>
             <svg className={styles.icon}>
-              <use href="/img/icons.svg#icon-email"></use>
+              <use href="./img/icons.svg#icon-email"></use>
             </svg>
           </div>
           <Link className={styles.link} to="mailto:littlehomebakery2023@gmail.com">
@@ -20,7 +20,7 @@ const Footer = () => {
         <li className={styles.item}>
           <div className={styles.iconCont}>
             <svg className={styles.icon}>
-              <use href="/img/icons.svg#icon-location"></use>
+              <use href="./img/icons.svg#icon-location"></use>
             </svg>
           </div>
           <Link className={styles.link} to="#">

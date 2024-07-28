@@ -9,7 +9,7 @@ const Header = () => {
         <Link className={styles.headerLogo} to="/"></Link>
         <Link to="/" className={styles.iconMenuCont} id="menu-toggle">
           <svg className={styles.iconMenu} width="20" height="20">
-            <use href="/img/icons.svg#icon-menu"></use>
+            <use href="./img/icons.svg#icon-menu"></use>
           </svg>
         </Link>
         <Navigation />
