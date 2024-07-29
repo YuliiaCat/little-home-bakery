@@ -142,10 +142,13 @@
 
   @include on-tablet {
     display: contents;
-    height: 100%;
     grid-column: 1 / -1;
-    overflow: hidden;
   }
+}
+
+.picturesBlock img {
+  width: 100%; /* Ensure the image covers the width of the container */
+  object-fit: cover; /* Cover the container without stretching */
 }
 
 .pictWide {
@@ -166,7 +169,6 @@
     grid-row: 2 / 3;
     grid-column: 8 / span 3;
     box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
-
   }
 }
 
