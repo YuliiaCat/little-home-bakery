@@ -1,5 +1,6 @@
 .footer {
-  background-color: $button-bcg;
+  background-color: $footer-green-color;
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   gap: 15px;

@@ -51,19 +51,23 @@
   padding: 45px 20px;
 
   @include on-tablet {
+    align-self: center;
     grid-column: 4 / span 3;
     font-size: 18px;
     line-height: 1.4;
     padding: 0 10px;
     grid-row: 1;
+    margin-bottom: 30px;
   }
 
   @include on-desktop {
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 1.5;
   }
 
   @include on-desktop-xl {
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 1.8;
   }
 }
 
@@ -131,9 +135,18 @@
 
 .welcome {
   @include on-tablet {
+    display: block;
     font-family: $dancing-font;
     font-weight: 700;
     font-size: 33px;
+  }
+
+  @include on-desktop {
+    font-size: 40px;
+  }
+
+  @include on-desktop-xl {
+    font-size: 52px;
   }
 }
 
@@ -147,8 +160,8 @@
 }
 
 .picturesBlock img {
-  width: 100%; /* Ensure the image covers the width of the container */
-  object-fit: cover; /* Cover the container without stretching */
+  width: 100%;
+  object-fit: cover;
 }
 
 .pictWide {
