@@ -7,9 +7,9 @@
     "sizeAvailable": ["15cm", "18cm"],
     "size": "15cm",
     "price": 80,
-    "image": "img/cakes/"
+    "image": "img/cakes/raspberry-mouse-cake.webp"
   },
-  {
+    {
     "id": 2,
     "category": "cakes",
     "itemId": "raspberry-mouse-cake",
@@ -17,40 +17,50 @@
     "sizeAvailable": ["15cm", "18cm"],
     "size": "18cm",
     "price": 100,
-    "image": "img/cakes/"
+    "image": "img/cakes/raspberry-mouse-cake2.webp"
   },
   {
     "id": 3,
+    "category": "cakes",
+    "itemId": "napoleon-cake",
+    "name": "Napoleon cake",
+    "sizeAvailable": ["15cm", "18cm", "24cm"],
+    "size": "15cm",
+    "price": 100,
+    "image": "img/cakes/napoleon.webp"
+  },
+  {
+    "id": 4,
     "category": "cakes",
     "itemId": "blueberry-mouse-cake",
     "name": "Blueberry mousse cake",
     "sizeAvailable": ["15cm", "18cm"],
     "size": "15cm",
     "price": 80,
-    "image": "./img/cakes/blueberry-mouse-cake.webp"
+    "image": "img/cakes/blueberry-mouse-cake.webp"
   },
   {
-    "id": 4,
+    "id": 5,
     "category": "cakes",
     "itemId": "sneakers",
     "name": "Sneakers cake",
     "sizeAvailable": ["15cm", "18cm", "24cm"],
     "size": "15cm",
     "price": 70,
-    "image": "/img/cakes/sneakers-cake.webp"
-  },
-  {
-    "id": 5,
-    "category": "cakes",
-    "itemId": "honey-cake",
-    "name": "Honey cake",
-    "sizeAvailable": ["15cm", "18cm", "24cm"],
-    "size": "15cm",
-    "price": 80,
-    "image": "img/cakes/"
+    "image": "img/cakes/sneakers-cake.webp"
   },
   {
     "id": 6,
+    "category": "cakes",
+    "itemId": "mandaline-cake",
+    "name": "Mandaline cake",
+    "sizeAvailable": ["15cm"],
+    "size": "15cm",
+    "price": 80,
+    "image": "img/cakes/custom-cake2.webp"
+  },
+  {
+    "id": 7,
     "category": "cakes",
     "itemId": "honey-cake",
     "name": "Honey cake",
@@ -60,17 +70,17 @@
     "image": "img/cakes/honey-cake.webp"
   },
   {
-    "id": 7,
+    "id": 8,
     "category": "cakes",
-    "itemId": "honey-cake",
-    "name": "Honey cake",
+    "itemId": "custom-shape-cake",
+    "name": "Custom shape cake",
     "sizeAvailable": ["15cm", "18cm", "24cm"],
     "size": "24cm",
     "price": 120,
-    "image": "img/cakes/"
+    "image": "img/cakes/custom-cake3.webp"
   },
   {
-    "id": 8,
+    "id": 9,
     "category": "cakes",
     "itemId": "classic-cheesecake",
     "name": "Classic cheesecake",
@@ -80,143 +90,103 @@
     "image": "img/cakes/classic-chessecake.webp"
   },
   {
-    "id": 9,
-    "category": "cakes",
-    "itemId": "classic-cheesecake",
-    "name": "Classic cheesecake",
-    "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
-    "size": "15cm",
-    "price": 45,
-    "image": "img/cakes/"
-  },
-  {
     "id": 10,
     "category": "cakes",
-    "itemId": "classic-cheesecake",
-    "name": "Classic cheesecake",
+    "itemId": "tripple-chocolate-cheesecake",
+    "name": "Tripple chocolate cheesecake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "18cm",
     "price": 55,
-    "image": "img/cakes/"
+    "image": "img/cakes/tripple-choco-cheesecake.webp"
   },
   {
     "id": 11,
-    "category": "cakes",
-    "itemId": "classic-cheesecake",
-    "name": "Classic cheesecake",
-    "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
-    "size": "24cm",
-    "price": 75,
-    "image": "img/cakes/"
-  },
-  {
-    "id": 12,
     "category": "cakes",
     "itemId": "pistachio-cheesecake",
     "name": "Pistachio cheesecake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "12cm",
     "price": 35,
-    "image": "img/cakes/"
+    "image": "img/cakes/pistachio-cheesecake,webp"
   },
-   {
-    "id": 13,
-    "category": "cakes",
-    "itemId": "pistachio-cheesecake",
-    "name": "Pistachio cheesecake",
-    "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
-    "size": "15cm",
-    "price": 45,
-    "image": "img/cakes/"
-  },
-   {
-    "id": 14,
-    "category": "cakes",
-    "itemId": "pistachio-cheesecake",
-    "name": "Pistachio cheesecake",
-    "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
+    {
+    "id": 12,
+    "category": "bento",
+    "itemId": "cherry-cheesecake",
+    "name": "Cheery chessecake",
+    "sizeAvailable": ["18cm", "24cm"],
     "size": "18cm",
-    "price": 55,
-    "image": "img/cakes/"
-  },
-   {
-    "id": 15,
-    "category": "cakes",
-    "itemId": "pistachio-cheesecake",
-    "name": "Pistachio cheesecake",
-    "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
-    "size": "24cm",
-    "price": 75,
-    "image": "img/cakes/"
+    "price": 35,
+    "image": "img/cakes/cherry-cheesecake.webp"
   },
   {
-    "id": 16,
+    "id": 13,
     "category": "cakes",
     "itemId": "macaron-cake",
     "name": "Macaron cake",
     "sizeAvailable": ["27pc", "54pc"],
     "size": "27pc",
     "price": 100,
-    "image": "img/cakes/"
+    "image": "img/cakes/macaron-cake.webp"
   },
   {
-    "id": 17,
-    "category": "cakes",
-    "itemId": "macaron-cake",
-    "name": "Macaron cake",
-    "sizeAvailable": ["27pc", "54pc"],
-    "size": "54pc",
-    "price": 180,
-    "image": "img/cakes/"
-  },
-  {
-    "id": 18,
+    "id": 14,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "12cm",
     "price": 45,
-    "image": "img/cakes/"
+    "image": "img/cakes/sponge-cake.webp"
   },
   {
-    "id": 19,
+    "id": 15,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "15cm",
     "price": 55,
-    "image": "img/cakes/"
+    "image": "img/cakes/custom-cake4.webp"
   },
   {
-    "id": 20,
+    "id": 16,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "18cm",
     "price": 70,
-    "image": "img/cakes/"
+    "image": "img/cakes/custom-cake1.webp"
   },
   {
-    "id": 21,
+    "id": 17,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "24cm",
     "price": 100,
-    "image": "img/cakes/"
+    "image": "img/cakes/bluederry-sponge-cake.webp"
+  },
+    {
+    "id": 18,
+    "category": "cakes",
+    "itemId": "custom-heart-cake",
+    "name": "Custom cake",
+    "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
+    "size": "18cm",
+    "price": 100,
+    "image": "img/cakes/custom-cake5.webp"
   },
   {
-    "id": 22,
+    "id": 19,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/"
+    "image": "img/cakes/bento-1.webp"
   }
 ]
