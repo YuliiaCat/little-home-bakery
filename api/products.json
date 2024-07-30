@@ -167,7 +167,7 @@
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "24cm",
     "price": 100,
-    "image": "img/cakes/bluederry-sponge-cake.webp"
+    "image": "img/cakes/blueberry-sponge-cake.webp"
   },
     {
     "id": 18,
@@ -188,5 +188,55 @@
     "size": "one size",
     "price": 35,
     "image": "img/cakes/bento-1.webp"
+  },
+  {
+    "id": 20,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-2.webp"
+  },
+  {
+    "id": 21,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-3.webp"
+  },
+  {
+    "id": 22,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-4.webp"
+  },
+  {
+    "id": 23,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-5.webp"
+  },
+  {
+    "id": 24,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-6.webp"
   }
 ]
