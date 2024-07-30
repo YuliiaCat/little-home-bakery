@@ -27,17 +27,17 @@
     "sizeAvailable": ["15cm", "18cm"],
     "size": "15cm",
     "price": 80,
-    "image": "img/cakes/"
+    "image": "./img/cakes/blueberry-mouse-cake.webp"
   },
   {
     "id": 4,
     "category": "cakes",
-    "itemId": "blueberry-mouse-cake",
-    "name": "Blueberry mousse cake",
-    "sizeAvailable": ["15cm", "18cm"],
-    "size": "18cm",
-    "price": 100,
-    "image": "img/cakes/"
+    "itemId": "sneakers",
+    "name": "Sneakers cake",
+    "sizeAvailable": ["15cm", "18cm", "24cm"],
+    "size": "15cm",
+    "price": 70,
+    "image": "/img/cakes/sneakers-cake.webp"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "sizeAvailable": ["15cm", "18cm", "24cm"],
     "size": "18cm",
     "price": 100,
-    "image": "img/cakes/"
+    "image": "img/cakes/honey-cake.webp"
   },
   {
     "id": 7,
@@ -77,7 +77,7 @@
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
     "size": "12cm",
     "price": 35,
-    "image": "img/cakes/"
+    "image": "img/cakes/classic-chessecake.webp"
   },
   {
     "id": 9,
@@ -211,7 +211,7 @@
   },
   {
     "id": 22,
-    "category": "cakes",
+    "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
     "sizeAvailable": ["one size"],
