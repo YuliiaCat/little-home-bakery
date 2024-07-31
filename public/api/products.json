@@ -9,18 +9,8 @@
     "price": 80,
     "image": "img/cakes/raspberry-mouse-cake.webp"
   },
-    {
-    "id": 2,
-    "category": "cakes",
-    "itemId": "raspberry-mouse-cake",
-    "name": "Raspberry mousse cake",
-    "sizeAvailable": ["15cm", "18cm"],
-    "size": "18cm",
-    "price": 100,
-    "image": "img/cakes/raspberry-mouse-cake2.webp"
-  },
   {
-    "id": 3,
+    "id": 2,
     "category": "cakes",
     "itemId": "napoleon-cake",
     "name": "Napoleon cake",
@@ -30,7 +20,7 @@
     "image": "img/cakes/napoleon.webp"
   },
   {
-    "id": 4,
+    "id": 3,
     "category": "cakes",
     "itemId": "blueberry-mouse-cake",
     "name": "Blueberry mousse cake",
@@ -40,7 +30,7 @@
     "image": "img/cakes/blueberry-mouse-cake.webp"
   },
   {
-    "id": 5,
+    "id": 4,
     "category": "cakes",
     "itemId": "sneakers",
     "name": "Sneakers cake",
@@ -50,7 +40,7 @@
     "image": "img/cakes/sneakers-cake.webp"
   },
   {
-    "id": 6,
+    "id": 5,
     "category": "cakes",
     "itemId": "mandaline-cake",
     "name": "Mandaline cake",
@@ -60,7 +50,7 @@
     "image": "img/cakes/custom-cake2.webp"
   },
   {
-    "id": 7,
+    "id": 6,
     "category": "cakes",
     "itemId": "honey-cake",
     "name": "Honey cake",
@@ -70,7 +60,7 @@
     "image": "img/cakes/honey-cake.webp"
   },
   {
-    "id": 8,
+    "id": 7,
     "category": "cakes",
     "itemId": "custom-shape-cake",
     "name": "Custom shape cake",
@@ -80,7 +70,7 @@
     "image": "img/cakes/custom-cake3.webp"
   },
   {
-    "id": 9,
+    "id": 8,
     "category": "cakes",
     "itemId": "classic-cheesecake",
     "name": "Classic cheesecake",
@@ -90,7 +80,7 @@
     "image": "img/cakes/classic-chessecake.webp"
   },
   {
-    "id": 10,
+    "id": 9,
     "category": "cakes",
     "itemId": "tripple-chocolate-cheesecake",
     "name": "Tripple chocolate cheesecake",
@@ -100,7 +90,7 @@
     "image": "img/cakes/tripple-choco-cheesecake.webp"
   },
   {
-    "id": 11,
+    "id": 10,
     "category": "cakes",
     "itemId": "pistachio-cheesecake",
     "name": "Pistachio cheesecake",
@@ -110,8 +100,8 @@
     "image": "img/cakes/pistachio-cheesecake,webp"
   },
     {
-    "id": 12,
-    "category": "bento",
+    "id": 11,
+    "category": "cakes",
     "itemId": "cherry-cheesecake",
     "name": "Cheery chessecake",
     "sizeAvailable": ["18cm", "24cm"],
@@ -120,7 +110,7 @@
     "image": "img/cakes/cherry-cheesecake.webp"
   },
   {
-    "id": 13,
+    "id": 12,
     "category": "cakes",
     "itemId": "macaron-cake",
     "name": "Macaron cake",
@@ -130,7 +120,7 @@
     "image": "img/cakes/macaron-cake.webp"
   },
   {
-    "id": 14,
+    "id": 13,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
@@ -140,7 +130,7 @@
     "image": "img/cakes/sponge-cake.webp"
   },
   {
-    "id": 15,
+    "id": 14,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
@@ -150,7 +140,7 @@
     "image": "img/cakes/custom-cake4.webp"
   },
   {
-    "id": 16,
+    "id": 15,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
@@ -160,7 +150,7 @@
     "image": "img/cakes/custom-cake1.webp"
   },
   {
-    "id": 17,
+    "id": 16,
     "category": "cakes",
     "itemId": "sponge-cake",
     "name": "Sponge cake",
@@ -170,7 +160,7 @@
     "image": "img/cakes/blueberry-sponge-cake.webp"
   },
     {
-    "id": 18,
+    "id": 17,
     "category": "cakes",
     "itemId": "custom-heart-cake",
     "name": "Custom cake",
@@ -180,7 +170,7 @@
     "image": "img/cakes/custom-cake5.webp"
   },
   {
-    "id": 19,
+    "id": 18,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
@@ -190,7 +180,7 @@
     "image": "img/cakes/bento-1.webp"
   },
   {
-    "id": 20,
+    "id": 19,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
@@ -200,7 +190,7 @@
     "image": "img/cakes/bento-2.webp"
   },
   {
-    "id": 21,
+    "id": 20,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
@@ -210,7 +200,7 @@
     "image": "img/cakes/bento-3.webp"
   },
   {
-    "id": 22,
+    "id": 21,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
@@ -220,7 +210,7 @@
     "image": "img/cakes/bento-4.webp"
   },
   {
-    "id": 23,
+    "id": 22,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
@@ -230,7 +220,7 @@
     "image": "img/cakes/bento-5.webp"
   },
   {
-    "id": 24,
+    "id": 23,
     "category": "bento",
     "itemId": "bento-cake",
     "name": "Bento cake",
@@ -239,14 +229,214 @@
     "price": 35,
     "image": "img/cakes/bento-6.webp"
   },
-  {
+    {
+    "id": 24,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-7.webp"
+  },
+    {
     "id": 25,
-    "category": "cakes",
-    "itemId": "raspberry-mouse-cake",
-    "name": "Raspberry mousse cake",
-    "sizeAvailable": ["15cm", "18cm"],
-    "size": "15cm",
-    "price": 80,
-    "image": "img/cakes/raspberry-mouse-cake.svg"
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-8.webp"
+  },
+    {
+    "id": 26,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-9.webp"
+  },
+    {
+    "id": 27,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-10.webp"
+  },
+    {
+    "id": 28,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-11.webp"
+  },
+    {
+    "id": 29,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-12.webp"
+  },
+    {
+    "id": 30,
+    "category": "bento",
+    "itemId": "bento-cake",
+    "name": "Bento cake",
+    "sizeAvailable": ["one size"],
+    "size": "one size",
+    "price": 35,
+    "image": "img/cakes/bento-13.webp"
+  },
+   {
+    "id": 31,
+    "category": "macarons",
+    "itemId": "mango-macaron",
+    "name": "Mango-passionfruit macaron",
+    "sizeAvailable": ["8pc"],
+    "size": "8pc",
+    "price": 30,
+    "image": "img/macaron/mango.webp"
+  },
+  {
+    "id": 32,
+    "category": "macarons",
+    "itemId": "pistachio-macaron",
+    "name": "Pistachio macaron",
+    "sizeAvailable": ["8pc"],
+    "size": "8pc",
+    "price": 30,
+    "image": "img/macaron/pistachio.webp"
+  },
+  {
+    "id": 33,
+    "category": "macarons",
+    "itemId": "strawberry-macaron",
+    "name": "Strawberry macaron",
+    "sizeAvailable": ["8pc"],
+    "size": "8pc",
+    "price": 30,
+    "image": "img/macaron/strawberry.webp"
+  },
+       {
+    "id": 34,
+    "category": "macarons",
+    "itemId": "lemon-macaron",
+    "name": "Lemon macaron",
+    "sizeAvailable": ["8pc"],
+    "size": "8pc",
+    "price": 30,
+    "image": "img/macaron/lemon.webp"
+  },
+  {
+    "id": 35,
+    "category": "macarons",
+    "itemId": "coconut-raspberry-macaron",
+    "name": "Coconut-raspberry macaron",
+    "sizeAvailable": ["8pc"],
+    "size": "8pc",
+    "price": 30,
+    "image": "img/macaron/coconut.webp"
+  },
+  {
+    "id": 36,
+    "category": "cupcakes",
+    "itemId": "pistachio-cupcakes",
+    "name": "Pistachio cupcakes",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "6pc",
+    "price": 40,
+    "image": "img/macaron/pistachio.webp"
+  },
+  {
+    "id": 37,
+    "category": "cupcakes",
+    "itemId": "chocolate-cupcakes",
+    "name": "Chocolate cupcakes",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "6pc",
+    "price": 40,
+    "image": "img/macaron/chocolate.webp"
+  },
+  {
+    "id": 38,
+    "category": "cupcakes",
+    "itemId": "raspberry-cupcakes",
+    "name": "Raspberry cupcakes",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "6pc",
+    "price": 40,
+    "image": "img/macaron/raspberry.webp"
+  },
+    {
+    "id": 39,
+    "category": "cupcakes",
+    "itemId": "caramel-cupcakes",
+    "name": "Caramel cupcakes",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "6pc",
+    "price": 40,
+    "image": "img/macaron/caramel.webp"
+  },
+  {
+    "id": 40,
+    "category": "cupcakes",
+    "itemId": "blueberry-cupcakes",
+    "name": "Blueberry cupcakes",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "6pc",
+    "price": 40,
+    "image": "img/macaron/blueberry.webp"
+  },
+  {
+    "id": 41,
+    "category": "macarons box",
+    "itemId": "macarons-box-24",
+    "name": "Box of macarons",
+    "sizeAvailable": ["24pc"],
+    "size": "24pc",
+    "price": 100,
+    "image": "img/macaron/macaron-box-24.webp"
+  },
+    {
+    "id": 42,
+    "category": "macarons box",
+    "itemId": "macarons-box-8",
+    "name": "Box of macarons",
+    "sizeAvailable": ["8pc"],
+    "size": "8pc",
+    "price": 30,
+    "image": "img/macaron/macaron-box-8.webp"
+  },
+    {
+    "id": 43,
+    "category": "macarons box",
+    "itemId": "macarons-box-10",
+    "name": "Box of macarons",
+    "sizeAvailable": ["10pc"],
+    "size": "10pc",
+    "price": 45,
+    "image": "img/macaron/macaron-box-10.webp"
+  },
+    {
+    "id": 44,
+    "category": "macarons box",
+    "itemId": "macarons-box-16",
+    "name": "Box of macarons",
+    "sizeAvailable": ["16pc"],
+    "size": "16pc",
+    "price": 55,
+    "image": "img/macaron/macaron-box-16.webp"
   }
 ]

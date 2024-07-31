@@ -1,5 +1,5 @@
 import styles from './MenuPage.module.scss';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Product } from "../../types/Product";
 import { getProducts } from '../../services/products';
 import { ProductType } from '../../types/ProductType';
@@ -8,21 +8,30 @@ import ProductList from '../../components/ProductList/ProductList';
 
 const MenuPage = () => {
   const [product, setProduct] = useState<Product[]>([]);
-  const [isActive, setIsActive] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<ProductType | null>(null);
   const [error, setError] = useState('');
 
-  const fetchProducts = () => {
+  const categories = [
+    ProductType.cakes,
+    ProductType.bento,
+    ProductType.macarons,
+    ProductType.cupcakes,
+    ProductType.macarons_box
+  ];
+
+
+  const fetchProducts = (category: ProductType) => {
     setError('');
     getProducts()
       .then(products => {
         const filteredProducts = products.filter(
-          (item: Product) => item.category === ProductType.cakes,
+          (item: Product) => item.category === category,
         );
 
         setProduct(filteredProducts);
       })
       .catch(err => {
-        setError('Cant load data')
+        setError('Can\'t load data')
         iziToast.error({
           title: 'Error',
           message: 'Can\'t load data at the moment',
@@ -32,51 +41,48 @@ const MenuPage = () => {
       })
   };
 
-  useEffect(() => {
-    fetchProducts();
-  }, [product]);
-
-  const handleTrigger = () => {
-    setIsActive(!isActive);
+  const handleTrigger = (category: ProductType) => {
+    setActiveCategory(prevCategory => {
+      if (prevCategory === category) {
+        return null;
+      }
+      fetchProducts(category);
+      return category;
+    });
   };
 
   return (
     <div className={`container ${styles.menu}`}>
       <h2 className={styles.title}>Our menu</h2>
       <ul className={styles.list}>
-        <li className={styles.item}>
-          <h3 className={styles.subtitle}>Cakes</h3>
-          <button
-            className={styles.dropdownBtn}
-            type='button'
-            onClick={handleTrigger}
-          >
-            {isActive ? (
-              <svg className={styles.icon}>
-                <use href="./img/icons.svg#icon-arrow-up"></use>
-              </svg>
-              ) : (
-              <svg className={styles.icon}>
-                <use href="./img/icons.svg#icon-arrow-down"></use>
-              </svg>
+        {categories.map((category, index) => (
+          <li className={styles.item} key={index}>
+            <h3 className={styles.subtitle}>
+              {category.charAt(0).toUpperCase() + category.slice(1)}
+            </h3>
+            <button
+              className={styles.dropdownBtn}
+              type='button'
+              onClick={() => handleTrigger(category)}
+            >
+              {activeCategory === category ? (
+                <svg className={styles.icon}>
+                  <use href="./img/icons.svg#icon-arrow-up"></use>
+                </svg>
+                ) : (
+                <svg className={styles.icon}>
+                  <use href="./img/icons.svg#icon-arrow-down"></use>
+                </svg>
+              )}
+            </button>
+            {activeCategory === category && !error && (
+              <ProductList products={product} />
             )}
-          </button>
+            {activeCategory === category && error && (
+              <div className={styles.error}>{error}</div>
+          )}
         </li>
-        {!error && (
-          <ProductList products={product} />
-        )}
-        {/* <li>
-          <h3>{title}</h3>
-        </li>
-        <li>
-          <h3>{title}</h3>
-        </li>
-        <li>
-          <h3>{title}</h3>
-        </li>
-        <li>
-          <h3>{title}</h3>
-        </li> */}
+      ))}
       </ul>
     </div>
   );
