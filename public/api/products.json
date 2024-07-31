@@ -177,7 +177,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-1.webp"
+    "image": "img/bento/bento-1.webp"
   },
   {
     "id": 19,
@@ -187,7 +187,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-2.webp"
+    "image": "img/bento/bento-2.webp"
   },
   {
     "id": 20,
@@ -197,7 +197,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-3.webp"
+    "image": "img/bento/bento-3.webp"
   },
   {
     "id": 21,
@@ -207,7 +207,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-4.webp"
+    "image": "img/bento/bento-4.webp"
   },
   {
     "id": 22,
@@ -217,7 +217,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-5.webp"
+    "image": "img/bento/bento-5.webp"
   },
   {
     "id": 23,
@@ -227,7 +227,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-6.webp"
+    "image": "img/bento/bento-6.webp"
   },
     {
     "id": 24,
@@ -237,7 +237,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-7.webp"
+    "image": "img/bento/bento-7.webp"
   },
     {
     "id": 25,
@@ -247,7 +247,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-8.webp"
+    "image": "img/bento/bento-8.webp"
   },
     {
     "id": 26,
@@ -257,7 +257,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-9.webp"
+    "image": "img/bento/bento-9.webp"
   },
     {
     "id": 27,
@@ -267,7 +267,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-10.webp"
+    "image": "img/bento/bento-10.webp"
   },
     {
     "id": 28,
@@ -277,7 +277,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-11.webp"
+    "image": "img/bento/bento-11.webp"
   },
     {
     "id": 29,
@@ -287,7 +287,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-12.webp"
+    "image": "img/bento/bento-12.webp"
   },
     {
     "id": 30,
@@ -297,7 +297,7 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/cakes/bento-13.webp"
+    "image": "img/bento/bento-13.webp"
   },
    {
     "id": 31,
@@ -357,7 +357,7 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/macaron/pistachio.webp"
+    "image": "img/cupcakes/pistachio.webp"
   },
   {
     "id": 37,
@@ -367,7 +367,7 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/macaron/chocolate.webp"
+    "image": "img/cupcakes/chocolate.webp"
   },
   {
     "id": 38,
@@ -377,7 +377,7 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/macaron/raspberry.webp"
+    "image": "img/cupcakes/raspberry.webp"
   },
     {
     "id": 39,
@@ -387,7 +387,7 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/macaron/caramel.webp"
+    "image": "img/cupcakes/caramel.webp"
   },
   {
     "id": 40,
@@ -397,7 +397,7 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/macaron/blueberry.webp"
+    "image": "img/cupcakes/blueberry.webp"
   },
   {
     "id": 41,
@@ -407,7 +407,7 @@
     "sizeAvailable": ["24pc"],
     "size": "24pc",
     "price": 100,
-    "image": "img/macaron/macaron-box-24.webp"
+    "image": "img/macaron-box/macaron-box-24.webp"
   },
     {
     "id": 42,
@@ -417,7 +417,7 @@
     "sizeAvailable": ["8pc"],
     "size": "8pc",
     "price": 30,
-    "image": "img/macaron/macaron-box-8.webp"
+    "image": "img/macaron-box/macaron-box-8.webp"
   },
     {
     "id": 43,
@@ -427,7 +427,7 @@
     "sizeAvailable": ["10pc"],
     "size": "10pc",
     "price": 45,
-    "image": "img/macaron/macaron-box-10.webp"
+    "image": "img/macaron-box/macaron-box-10.webp"
   },
     {
     "id": 44,
@@ -437,6 +437,6 @@
     "sizeAvailable": ["16pc"],
     "size": "16pc",
     "price": 55,
-    "image": "img/macaron/macaron-box-16.webp"
+    "image": "img/macaron-box/macaron-box-16.webp"
   }
 ]
