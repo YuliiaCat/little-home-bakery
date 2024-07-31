@@ -10,7 +10,7 @@ const ContactUs = () => {
             <use href="./img/icons.svg#icon-general-inq"></use>
           </svg>
           <h2 className={styles.title}>General Inquiry</h2>
-          <p className={styles.text}>If you have any questions about Ladurée, please send an email.</p>
+          <p className={styles.text}>If you have any questions, please send an email.</p>
           <Link className={styles.email} to="mailto:littlehomebakery2023@gmail.com">
             Get in touch
           </Link>

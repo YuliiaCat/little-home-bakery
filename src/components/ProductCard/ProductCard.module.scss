@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  padding: 30px 15px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+  background-color: $white-color;
+}
+
+.img {
+  border-radius: 10px;
+  padding: 25px 0;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-family: $dancing-font;
+  font-size: 24px;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  padding: 5px 10px;
+  border: 1px solid $pink-color;
+  border-radius: 5px;
+  background-color: $very-light-green-color;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.is-active {
+  background-color: $pink-color;
+}

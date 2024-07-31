@@ -238,5 +238,15 @@
     "size": "one size",
     "price": 35,
     "image": "img/cakes/bento-6.webp"
+  },
+  {
+    "id": 25,
+    "category": "cakes",
+    "itemId": "raspberry-mouse-cake",
+    "name": "Raspberry mousse cake",
+    "sizeAvailable": ["15cm", "18cm"],
+    "size": "15cm",
+    "price": 80,
+    "image": "img/cakes/raspberry-mouse-cake.svg"
   }
 ]
