@@ -95,9 +95,9 @@
     "itemId": "pistachio-cheesecake",
     "name": "Pistachio cheesecake",
     "sizeAvailable": ["12cm", "15cm", "18cm", "24cm"],
-    "size": "12cm",
-    "price": 35,
-    "image": "img/cakes/pistachio-cheesecake,webp"
+    "size": "18cm",
+    "price": 50,
+    "image": "img/cakes/pistachio-cheesecake.webp"
   },
     {
     "id": 11,
@@ -279,28 +279,8 @@
     "price": 35,
     "image": "img/bento/bento-11.webp"
   },
-    {
-    "id": 29,
-    "category": "bento",
-    "itemId": "bento-cake",
-    "name": "Bento cake",
-    "sizeAvailable": ["one size"],
-    "size": "one size",
-    "price": 35,
-    "image": "img/bento/bento-12.webp"
-  },
-    {
-    "id": 30,
-    "category": "bento",
-    "itemId": "bento-cake",
-    "name": "Bento cake",
-    "sizeAvailable": ["one size"],
-    "size": "one size",
-    "price": 35,
-    "image": "img/bento/bento-13.webp"
-  },
    {
-    "id": 31,
+    "id": 29,
     "category": "macarons",
     "itemId": "mango-macaron",
     "name": "Mango-passionfruit macaron",
@@ -310,7 +290,7 @@
     "image": "img/macaron/mango.webp"
   },
   {
-    "id": 32,
+    "id": 30,
     "category": "macarons",
     "itemId": "pistachio-macaron",
     "name": "Pistachio macaron",
@@ -320,7 +300,7 @@
     "image": "img/macaron/pistachio.webp"
   },
   {
-    "id": 33,
+    "id": 31,
     "category": "macarons",
     "itemId": "strawberry-macaron",
     "name": "Strawberry macaron",
@@ -329,8 +309,8 @@
     "price": 30,
     "image": "img/macaron/strawberry.webp"
   },
-       {
-    "id": 34,
+  {
+    "id": 32,
     "category": "macarons",
     "itemId": "lemon-macaron",
     "name": "Lemon macaron",
@@ -340,7 +320,7 @@
     "image": "img/macaron/lemon.webp"
   },
   {
-    "id": 35,
+    "id": 33,
     "category": "macarons",
     "itemId": "coconut-raspberry-macaron",
     "name": "Coconut-raspberry macaron",
@@ -350,7 +330,7 @@
     "image": "img/macaron/coconut.webp"
   },
   {
-    "id": 36,
+    "id": 34,
     "category": "cupcakes",
     "itemId": "pistachio-cupcakes",
     "name": "Pistachio cupcakes",
@@ -360,7 +340,7 @@
     "image": "img/cupcakes/pistachio.webp"
   },
   {
-    "id": 37,
+    "id": 35,
     "category": "cupcakes",
     "itemId": "chocolate-cupcakes",
     "name": "Chocolate cupcakes",
@@ -370,7 +350,7 @@
     "image": "img/cupcakes/chocolate.webp"
   },
   {
-    "id": 38,
+    "id": 36,
     "category": "cupcakes",
     "itemId": "raspberry-cupcakes",
     "name": "Raspberry cupcakes",
@@ -380,7 +360,7 @@
     "image": "img/cupcakes/raspberry.webp"
   },
     {
-    "id": 39,
+    "id": 37,
     "category": "cupcakes",
     "itemId": "caramel-cupcakes",
     "name": "Caramel cupcakes",
@@ -390,7 +370,7 @@
     "image": "img/cupcakes/caramel.webp"
   },
   {
-    "id": 40,
+    "id": 38,
     "category": "cupcakes",
     "itemId": "blueberry-cupcakes",
     "name": "Blueberry cupcakes",
@@ -400,7 +380,7 @@
     "image": "img/cupcakes/blueberry.webp"
   },
   {
-    "id": 41,
+    "id": 39,
     "category": "macarons box",
     "itemId": "macarons-box-24",
     "name": "Box of macarons",
@@ -410,7 +390,7 @@
     "image": "img/macaron-box/macaron-box-24.webp"
   },
     {
-    "id": 42,
+    "id": 40,
     "category": "macarons box",
     "itemId": "macarons-box-8",
     "name": "Box of macarons",
@@ -420,7 +400,7 @@
     "image": "img/macaron-box/macaron-box-8.webp"
   },
     {
-    "id": 43,
+    "id": 41,
     "category": "macarons box",
     "itemId": "macarons-box-10",
     "name": "Box of macarons",
@@ -430,7 +410,7 @@
     "image": "img/macaron-box/macaron-box-10.webp"
   },
     {
-    "id": 44,
+    "id": 42,
     "category": "macarons box",
     "itemId": "macarons-box-16",
     "name": "Box of macarons",

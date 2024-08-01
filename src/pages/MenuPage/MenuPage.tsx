@@ -1,5 +1,5 @@
 import styles from './MenuPage.module.scss';
-import { useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Product } from "../../types/Product";
 import { getProducts } from '../../services/products';
 import { ProductType } from '../../types/ProductType';
@@ -11,14 +11,26 @@ const MenuPage = () => {
   const [activeCategory, setActiveCategory] = useState<ProductType | null>(null);
   const [error, setError] = useState('');
 
-  const categories = [
-    ProductType.cakes,
-    ProductType.bento,
-    ProductType.macarons,
-    ProductType.cupcakes,
-    ProductType.macarons_box
-  ];
+  const categories = useMemo(() => {
+    return [
+      ProductType.cakes,
+      ProductType.bento,
+      ProductType.macarons,
+      ProductType.cupcakes,
+      ProductType.macarons_box
+    ];
+  }, [])
 
+  const refs = useRef<(HTMLLIElement | null)[]>([]);
+
+   useEffect(() => {
+    if (activeCategory !== null && refs.current.length) {
+      const activeRef = refs.current[categories.indexOf(activeCategory)];
+      if (activeRef) {
+        activeRef.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [categories, activeCategory]);
 
   const fetchProducts = (category: ProductType) => {
     setError('');

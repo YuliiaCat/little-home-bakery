@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './BurgerMenu.module.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type Props = {
   isOpen: boolean,
@@ -8,6 +8,15 @@ type Props = {
 }
 
 const BurgerMenu: React.FC<Props> = ({ isOpen, onClose }) => {
+
+useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   return (
     <div className={`${styles.burgerMenu} ${isOpen ? styles.isOpen : ''}`}>
       <nav className={styles.content}>
@@ -50,7 +59,7 @@ const BurgerMenu: React.FC<Props> = ({ isOpen, onClose }) => {
           </li>
         </ul>
       </nav>
-    </div>
+      </div>
   );
 }
 
