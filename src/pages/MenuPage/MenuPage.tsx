@@ -10,6 +10,7 @@ const MenuPage = () => {
   const [product, setProduct] = useState<Product[]>([]);
   const [activeCategory, setActiveCategory] = useState<ProductType | null>(null);
   const [error, setError] = useState('');
+  const listRef = useRef<HTMLUListElement | null>(null);
 
   const categories = useMemo(() => {
     return [
@@ -21,16 +22,11 @@ const MenuPage = () => {
     ];
   }, [])
 
-  const refs = useRef<(HTMLLIElement | null)[]>([]);
-
    useEffect(() => {
-    if (activeCategory !== null && refs.current.length) {
-      const activeRef = refs.current[categories.indexOf(activeCategory)];
-      if (activeRef) {
-        activeRef.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+    if (activeCategory !== null && listRef.current) {
+      listRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  }, [categories, activeCategory]);
+  }, [activeCategory]);
 
   const fetchProducts = (category: ProductType) => {
     setError('');
@@ -66,7 +62,7 @@ const MenuPage = () => {
   return (
     <div className={`container ${styles.menu}`}>
       <h2 className={styles.title}>Our menu</h2>
-      <ul className={styles.list}>
+      <ul className={styles.list} ref={listRef}>
         {categories.map((category, index) => (
           <li className={styles.item} key={index}>
             <h3 className={styles.subtitle}>

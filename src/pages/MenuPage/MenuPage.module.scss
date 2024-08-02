@@ -4,12 +4,29 @@
   align-items: center;
   justify-content: center;
   padding: 70px 0;
+
+  @include on-tablet {
+    padding: 100px 0;
+  }
+
+  @include on-desktop {
+    padding: 150px 0;
+  }
 }
 
 .title {
   font-family: $dancing-font;
   font-size: 30px;
   margin-bottom: 40px;
+  
+  @include on-tablet {
+    margin-bottom: 60px;
+    font-size: 35px;
+  }
+
+  @include on-desktop {
+    font-size: 45px;
+  }
 }
 
 .list {
@@ -18,6 +35,14 @@
   align-items: center;
   gap: 18px;
   transition: max-height 0.3s ease-out;
+
+  @include on-tablet {
+    gap: 20px;
+  }
+
+  @include on-desktop {
+    gap: 24px;
+  }
 }
 
 .item {
@@ -33,6 +58,18 @@
   white-space: nowrap;
   box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.5);
   border: 1px solid $soft-grey;
+
+  @include on-tablet {
+    width: 100%;
+    padding: 20px 50px;
+    gap: 15px;
+  }
+
+  @include on-desktop {
+    padding: 25px 120px;
+  }
+
+  @include hover(box-shadow, 0px 10px 15px -12px rgba(0, 0, 0, 0.5))
 }
 
 .item:nth-child(even) {
@@ -44,6 +81,11 @@
   font-size: 27px;
   font-weight: 400;
   padding: 20px 120px;
+
+  @include on-desktop {
+    text-transform: uppercase;
+    font-size: 35px;
+  }
 }
 
 .dropdownBtn {
@@ -59,6 +101,13 @@
   background-color: $very-light-green-color;
   border-radius: 10px;
   cursor: pointer;
+
+  @include on-desktop {
+    right: 25px;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .icon {
@@ -66,5 +115,10 @@
   height: 12px;
   fill: $dark-grey-color;
   stroke: $dark-grey-color;
+
+  @include on-desktop {
+    width: 17px;
+    height: 17px;
+  }
 }
 
