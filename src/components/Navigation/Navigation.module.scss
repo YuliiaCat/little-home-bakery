@@ -15,3 +15,7 @@
 
   @include hover(text-shadow, 0 2px 15px $pink-color);
 }
+
+.isActive {
+  text-shadow: 0 1px 15px $bright-pink-color;
+}

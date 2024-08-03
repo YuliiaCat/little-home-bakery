@@ -4,7 +4,7 @@
   flex-direction: row;
   background-image: linear-gradient(
       to right,
-      lavenderblush 0%,
+      $bgc-theme 0%,
       transparent 50%,
       transparent 100%
     ),
@@ -100,12 +100,15 @@
   border: 1px solid $dark-grey-color;
   box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
-  @include hover(background-color, $light-green-color);
+  @include hover(background-color, $light-green-color, transform, scale(1.01));
 
   &:focus {
     background-color: $light-green-color;
+  }
+
+  @include on-desktop {
+    width: 250px;
   }
 }
 
@@ -117,5 +120,9 @@
 
   @include on-tablet {
     font-size: 24px;
+  }
+
+  @include on-desktop {
+    font-size: 26px;
   }
 }

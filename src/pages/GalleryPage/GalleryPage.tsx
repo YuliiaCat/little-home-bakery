@@ -8,14 +8,13 @@ import { getProducts } from '../../services/products';
 
 const GalleryPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [activeCategory, setActiveCategory] = useState<ProductType | null>(null);
+  const [activeCategory, setActiveCategory] = useState<ProductType | null>(ProductType.cakes);
   const [error, setError] = useState<string>('');
 
   const fetchProducts = async () => {
     setError('');
     try {
       const fetchedProducts = await getProducts();
-      console.log('Fetched Products:', fetchedProducts);
 
       setProducts(fetchedProducts);
     } catch (err) {
@@ -33,12 +32,6 @@ const GalleryPage = () => {
     fetchProducts();
   }, []);
 
-  useEffect(() => {
-    if (activeCategory) {
-      fetchProducts();
-    }
-  }, [activeCategory]);
-
   const categories = [
       ProductType.cakes,
       ProductType.bento,
@@ -52,11 +45,9 @@ const GalleryPage = () => {
     ? products.filter(product => product.category === activeCategory)
     : products;
 
-    console.log('Filtered Products:', filteredProducts);
-
-    const imageUrls = filteredProducts.flatMap(product => product.fullImage);
-
-    console.log('Image URLs:', imageUrls); 
+    const imageUrls = filteredProducts.flatMap(product =>
+      product.fullImage.filter(url => url && url.trim() !== '')
+    );
 
   return (
   <div className={`container ${styles.gallery}`}>
@@ -77,7 +68,7 @@ const GalleryPage = () => {
           ))}
       </ul>
       <ul className={styles.photoList}>
-        {!imageUrls.length && !error ? (
+        {imageUrls.length && !error ? (
             imageUrls.map((url, index) => (
               <li key={index} className={styles.photoItem}>
                 <img className={styles.photo} src={url} alt={`Product ${index}`} />
