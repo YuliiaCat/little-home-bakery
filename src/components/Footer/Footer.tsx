@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Link className={styles.logo} to="/"></Link>
-      <h2 className={styles.title}>Contact info</h2>
+      <h2 className={styles.titleFooter}>Contact info</h2>
       <ul className={styles.list}>
         <li className={styles.item}>
           <div className={styles.iconCont}>

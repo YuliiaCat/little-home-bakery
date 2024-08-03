@@ -7,4 +7,5 @@ export type Product = {
   size: string,
   price: number,
   image: string,
+  fullImage: string[],
 };

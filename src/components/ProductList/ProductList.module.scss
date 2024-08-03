@@ -1,0 +1,15 @@
+.list {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   align-items: center;
+   padding: 20px;
+
+  @include on-tablet {
+    gap: 15px;
+  }
+
+  @include on-desktop {
+    gap: 24px;
+  }
+}

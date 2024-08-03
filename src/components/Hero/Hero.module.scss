@@ -114,4 +114,8 @@
   font-size: 20px;
   text-decoration: none;
   color: $main-text-color;
+
+  @include on-tablet {
+    font-size: 24px;
+  }
 }

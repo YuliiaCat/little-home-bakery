@@ -15,7 +15,7 @@
   }
 
   @include on-desktop {
-    width: 450px;
+    width: 500px;
     padding: 40px 25px;
     gap: 20px;
 
@@ -57,6 +57,11 @@
   @include on-tablet {
     font-size: 18px;
   }
+
+  @include on-desktop {
+    padding: 7px 18px;
+    font-size: 22px;
+  }
 }
 
 .price {
@@ -65,9 +70,16 @@
   @include on-tablet {
     font-size: 20px;
   }
+
+  @include on-desktop {
+    font-size: 22px;
+  }
 }
 
 .is-active {
   background-color: $pink-color;
 }
 
+.sizeSelected {
+  background-color: $little-home-bakery-pink;
+}

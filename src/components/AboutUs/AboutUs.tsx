@@ -1,8 +1,36 @@
+import { useEffect, useRef, useState } from 'react';
 import SwiperComp from '../SwiperComp/SwiperComp';
 import styles from './AboutUs.module.scss';
 import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    const element = sectionRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1}
+    );
+
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => {
+      if (element) {
+        observer.unobserve(element);
+      }
+    };
+}, []);
+
   return (
     <section id="about-us" className={styles.aboutUs}>
       <div className={`container ${styles.aboutUsCont}`}>
@@ -12,7 +40,11 @@ const AboutUs = () => {
 
         <img className={styles.imgFirst} src="./img/about-us/about-us-1.webp" alt="Macaron" />
 
-          <p className={styles.description}><span className={styles.welcome}>Welcome to our bakery!</span> Discover the joy of fresh, delicious baked goods made with love.
+          <p 
+            ref={sectionRef}
+            className={`${styles.description} ${isVisible ? styles.animate : ''}`}
+            >
+              <span className={styles.welcome}>Welcome to our bakery!</span> Discover the joy of fresh, delicious baked goods made with love.
             From macarons and cakes to eclairs, everything is crafted with the best ingredients.
             Check out our menu and enjoy the warmth and charm of our bakery.
           </p>

@@ -18,7 +18,8 @@ const MenuPage = () => {
       ProductType.bento,
       ProductType.macarons,
       ProductType.cupcakes,
-      ProductType.macarons_box
+      ProductType.macarons_box,
+      ProductType.eclairs
     ];
   }, [])
 
@@ -61,7 +62,7 @@ const MenuPage = () => {
 
   return (
     <div className={`container ${styles.menu}`}>
-      <h2 className={styles.title}>Our menu</h2>
+      <h2 className="title">Our menu</h2>
       <ul className={styles.list} ref={listRef}>
         {categories.map((category, index) => (
           <li className={styles.item} key={index}>
@@ -75,11 +76,11 @@ const MenuPage = () => {
             >
               {activeCategory === category ? (
                 <svg className={styles.icon}>
-                  <use href="./img/icons.svg#icon-arrow-up"></use>
+                  <use href="./img/icons.svg#icon-up"></use>
                 </svg>
                 ) : (
                 <svg className={styles.icon}>
-                  <use href="./img/icons.svg#icon-arrow-down"></use>
+                  <use href="./img/icons.svg#icon-down"></use>
                 </svg>
               )}
             </button>

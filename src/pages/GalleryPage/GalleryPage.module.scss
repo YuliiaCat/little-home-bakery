@@ -1,0 +1,68 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  background-color: $very-light-green-color;
+  border: 3px solid $little-home-bakery-pink;
+  margin-bottom: 60px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.category {
+  text-transform: uppercase;
+  color: $main-text-color;
+  font-weight: 500;
+  border: 1px solid $dark-grey-color;
+  padding: 7px 17px;
+  border-radius: 32px;
+  cursor: pointer;
+
+  @include on-desktop {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.photoList {
+  list-style: none;
+  display: grid;
+  --columns: 4;
+  grid-template-columns: repeat((--columns), 1fr);
+  gap: 10px;
+
+  @include on-tablet {
+    --columns: 4;
+    gap: 18px;
+  }
+
+  @include on-desktop {
+    --columns: 8;
+  }
+}
+
+.photoItem {
+  grid-column: span 1;
+
+  @include on-tablet {
+    grid-column: span 2;
+  }
+}
+
+.photo {
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.isActive {
+  background-color: $little-home-bakery-pink;
+  border-radius: 32px;
+}

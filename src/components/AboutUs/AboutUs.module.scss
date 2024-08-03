@@ -1,3 +1,18 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
 .aboutUs {
   background-color: $very-light-green-color;
 
@@ -49,6 +64,9 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
   padding: 45px 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 3.5s ease-out;
 
   @include on-tablet {
     align-self: center;
@@ -110,6 +128,10 @@
   font-size: 20px;
   text-decoration: none;
   color: $main-text-color;
+
+  @include on-desktop {
+    font-size: 24px;
+  }
 }
 
 .img,
@@ -139,6 +161,7 @@
     font-family: $dancing-font;
     font-weight: 700;
     font-size: 33px;
+    animation: fadeIn 3s ease-out;
   }
 
   @include on-desktop {

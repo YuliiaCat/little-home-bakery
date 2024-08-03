@@ -4,4 +4,5 @@ export enum ProductType {
   macarons = 'macarons',
   cupcakes = 'cupcakes',
   macarons_box = 'macarons box',
+  eclairs = 'eclairs'
 }

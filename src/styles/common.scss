@@ -118,3 +118,19 @@ img {
   border: 1px solid $dark-grey-color;
 } 
 
+.title {
+  font-family: $dancing-font;
+  font-size: 35px;
+  letter-spacing: 0.01em;
+  margin-bottom: 50px;
+  
+  @include on-tablet {
+    margin-bottom: 60px;
+    font-size: 45px;
+  }
+
+  @include on-desktop {
+    font-size: 55px;
+  }
+}
+

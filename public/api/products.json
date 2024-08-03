@@ -7,7 +7,8 @@
     "sizeAvailable": ["15cm", "18cm"],
     "size": "15cm",
     "price": 80,
-    "image": "img/cakes/raspberry-mouse-cake.webp"
+    "image": "img/cakes/raspberry-mouse-cake.webp",
+    "fullImage": ["img/bento/bento-full-3.webp"]
   },
   {
     "id": 2,
@@ -177,7 +178,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-1.webp"
+    "image": "img/bento/bento-1.webp",
+    "fullImage": "img/bento/bento-full-1.webp"
   },
   {
     "id": 19,
@@ -187,7 +189,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-2.webp"
+    "image": "img/bento/bento-2.webp",
+    "fullImage": "img/bento/bento-full-2.webp"
   },
   {
     "id": 20,
@@ -197,7 +200,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-3.webp"
+    "image": "img/bento/bento-3.webp",
+    "fullImage": "img/bento/bento-full-3.webp"
   },
   {
     "id": 21,
@@ -207,7 +211,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-4.webp"
+    "image": "img/bento/bento-4.webp",
+    "fullImage": "img/bento/bento-full-4.webp"
   },
   {
     "id": 22,
@@ -217,7 +222,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-5.webp"
+    "image": "img/bento/bento-5.webp",
+    "fullImage": "img/bento/bento-full-5.webp"
   },
   {
     "id": 23,
@@ -227,7 +233,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-6.webp"
+    "image": "img/bento/bento-6.webp",
+    "fullImage": "img/bento/bento-full-6.webp"
   },
     {
     "id": 24,
@@ -237,7 +244,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-7.webp"
+    "image": "img/bento/bento-7.webp",
+    "fullImage": "img/bento/bento-full-7.webp"
   },
     {
     "id": 25,
@@ -247,7 +255,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-8.webp"
+    "image": "img/bento/bento-8.webp",
+    "fullImage": "img/bento/bento-full-8.webp"
   },
     {
     "id": 26,
@@ -257,7 +266,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-9.webp"
+    "image": "img/bento/bento-9.webp",
+    "fullImage": "img/bento/bento-full-9.webp"
   },
     {
     "id": 27,
@@ -267,7 +277,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-10.webp"
+    "image": "img/bento/bento-10.webp",
+    "fullImage": "img/bento/bento-full-10.webp"
   },
     {
     "id": 28,
@@ -277,7 +288,8 @@
     "sizeAvailable": ["one size"],
     "size": "one size",
     "price": 35,
-    "image": "img/bento/bento-11.webp"
+    "image": "img/bento/bento-11.webp",
+    "fullImage": "img/bento/bento-full-11.webp"
   },
    {
     "id": 29,
@@ -337,7 +349,8 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/cupcakes/pistachio.webp"
+    "image": "img/cupcakes/pistachio.webp",
+    "fullImage": ["img/cupcakes/pistachio-full.webp"]
   },
   {
     "id": 35,
@@ -347,7 +360,8 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/cupcakes/chocolate.webp"
+    "image": "img/cupcakes/chocolate.webp",
+    "fullImage": ["img/cupcakes/chocolate-full.webp"]
   },
   {
     "id": 36,
@@ -357,7 +371,12 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/cupcakes/raspberry.webp"
+    "image": "img/cupcakes/raspberry.webp",
+    "fullImage": 
+      [
+        "img/cupcakes/raspberry-full-1.webp",
+        "img/cupcakes/raspberry-full-2.webp"
+      ]
   },
     {
     "id": 37,
@@ -367,7 +386,8 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/cupcakes/caramel.webp"
+    "image": "img/cupcakes/caramel.webp",
+    "fullImage": ["img/cupcakes/caramel-full.webp"]
   },
   {
     "id": 38,
@@ -377,7 +397,8 @@
     "sizeAvailable": ["6pc", "12pc", "18pc"],
     "size": "6pc",
     "price": 40,
-    "image": "img/cupcakes/blueberry.webp"
+    "image": "img/cupcakes/blueberry.webp",
+    "fullImage": ["img/cupcakes/blueberry-full.webp"]
   },
   {
     "id": 39,
@@ -387,7 +408,18 @@
     "sizeAvailable": ["24pc"],
     "size": "24pc",
     "price": 100,
-    "image": "img/macaron-box/macaron-box-24.webp"
+    "image": "img/macaron-box/macaron-box-24.webp",
+    "fullImage":
+      [ 
+        "img/macaron-box/macaron-full-box-24.webp",
+        "img/macaron-box/macaron-full-1.webp",
+        "img/macaron-box/macaron-full-2.webp",
+        "img/macaron-box/macaron-full-4.webp",
+        "img/macaron-box/macaron-full-5.webp",
+        "img/macaron-box/macaron-full-6.webp",
+        "img/macaron-box/macaron-full-7.webp",
+        "img/macaron-box/macaron-full-9.webp"
+      ]
   },
     {
     "id": 40,
@@ -397,7 +429,13 @@
     "sizeAvailable": ["8pc"],
     "size": "8pc",
     "price": 30,
-    "image": "img/macaron-box/macaron-box-8.webp"
+    "image": "img/macaron-box/macaron-box-8.webp",
+    "fullImage": 
+      [
+        "img/macaron-box/macaron-full-box-8.webp",
+        "img/macaron-box/macaron-full-8.webp",
+        "img/macaron-box/macaron-full-3.webp"
+      ]
   },
     {
     "id": 41,
@@ -407,7 +445,8 @@
     "sizeAvailable": ["10pc"],
     "size": "10pc",
     "price": 45,
-    "image": "img/macaron-box/macaron-box-10.webp"
+    "image": "img/macaron-box/macaron-box-10.webp",
+    "fullImage": ["img/macaron-box/macaron-full-box-10.webp"]
   },
     {
     "id": 42,
@@ -417,6 +456,44 @@
     "sizeAvailable": ["16pc"],
     "size": "16pc",
     "price": 55,
-    "image": "img/macaron-box/macaron-box-16.webp"
+    "image": "img/macaron-box/macaron-box-16.webp",
+    "fullImage": ["img/macaron-box/macaron-full-box-16.webp"]
+  },
+  {
+    "id": 43,
+    "category": "eclairs",
+    "itemId": "hazelnut-eclairs",
+    "name": "Hazelnut eclairs",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "6pc",
+    "price": 25,
+    "image": "img/eclairs/hazelnut.webp",
+    "fullImage": 
+      [
+        "img/eclairs/hazelnut-full.webp",
+        "img/eclairs/hazelnut-full-1.webp"
+      ]
+  },
+  {
+    "id": 44,
+    "category": "eclairs",
+    "itemId": "vanilla-eclairs",
+    "name": "Vanilla eclairs",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "12pc",
+    "price": 60,
+    "image": "img/eclairs/vanilla.webp",
+    "fullImage": ["img/eclairs/vanilla-full.webp"]
+  },
+  {
+    "id": 45,
+    "category": "eclairs",
+    "itemId": "raspberry-eclairs",
+    "name": "Raspberry eclairs",
+    "sizeAvailable": ["6pc", "12pc", "18pc"],
+    "size": "18pc",
+    "price": 80,
+    "image": "img/eclairs/raspberry.webp",
+    "fullImage": ["img/eclairs/raspberry-full.webp"]
   }
 ]
