@@ -350,8 +350,7 @@
     "fullImage": 
       [
         "img/macaron/pistachio-full.webp",
-        "img/macaron/pistachio-full-1.webp",
-        "img/macaron/pistachio-full-2.webp"
+        "img/macaron/pistachio-full-1.webp"
       ]
   },
   {
@@ -483,6 +482,17 @@
   {
     "id": 41,
     "category": "macarons box",
+    "itemId": "macarons-box-16",
+    "name": "Box of macarons",
+    "sizeAvailable": ["16pc"],
+    "size": "16pc",
+    "price": 55,
+    "image": "img/macaron-box/macaron-box-16.webp",
+    "fullImage": ["img/macaron-box/macaron-full-box-16.webp"]
+  },
+  {
+    "id": 42,
+    "category": "macarons box",
     "itemId": "macarons-box-24",
     "name": "Box of macarons",
     "sizeAvailable": ["24pc"],
@@ -502,7 +512,7 @@
       ]
   },
     {
-    "id": 42,
+    "id": 43,
     "category": "macarons box",
     "itemId": "macarons-box-8",
     "name": "Box of macarons",
@@ -518,7 +528,7 @@
       ]
   },
     {
-    "id": 43,
+    "id": 44,
     "category": "macarons box",
     "itemId": "macarons-box-10",
     "name": "Box of macarons",
@@ -528,17 +538,7 @@
     "image": "img/macaron-box/macaron-box-10.webp",
     "fullImage": ["img/macaron-box/macaron-full-box-10.webp"]
   },
-    {
-    "id": 44,
-    "category": "macarons box",
-    "itemId": "macarons-box-16",
-    "name": "Box of macarons",
-    "sizeAvailable": ["16pc"],
-    "size": "16pc",
-    "price": 55,
-    "image": "img/macaron-box/macaron-box-16.webp",
-    "fullImage": ["img/macaron-box/macaron-full-box-16.webp"]
-  },
+
   {
     "id": 45,
     "category": "eclairs",
