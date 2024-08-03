@@ -26,11 +26,3 @@
     @content;
   }
 }
-
-
-
-@mixin placeholder {
-  &::placeholder {
-    @content;
-  }
-}

@@ -36,7 +36,7 @@
   flex-direction: column;
   gap: 12px;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px;
   width: 80%;
   border-radius: 15px;
   background-color: $footer-green-color;
@@ -45,13 +45,15 @@
   border: 1px solid $soft-grey;
 
   @include on-tablet {
-    width: 100%;
-    padding: 20px 50px;
+    width: 550px;
+    padding: 20px;
     gap: 15px;
   }
 
   @include on-desktop {
-    padding: 25px 250px;
+    width: 750px;
+    padding: 30px;
+    gap: 24px
   }
 
   @include hover(box-shadow, 0px 10px 15px -12px rgba(0, 0, 0, 0.5));
@@ -82,8 +84,8 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: none;
-  background-color: $very-light-green-color;
+  border: 1px solid $main-text-color;
+  background-color: transparent;
   border-radius: 10px;
   cursor: pointer;
 
@@ -102,8 +104,6 @@
   height: 25px;
   fill: $dark-grey-color;
   stroke: $dark-grey-color;
-  z-index: 5;
-  background-color: rgba(255, 0, 0, 0.2);
 
   @include on-tablet {
     width: 30px;
