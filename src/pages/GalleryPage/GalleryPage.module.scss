@@ -34,7 +34,6 @@
 }
 
 .photoList {
-  list-style: none;
   display: grid;
   --columns: 4;
   grid-template-columns: repeat((--columns), 1fr);

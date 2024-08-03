@@ -50,9 +50,13 @@ const GalleryPage = () => {
 
   const filteredProducts = activeCategory
     ? products.filter(product => product.category === activeCategory)
-    : [];
+    : products;
+
+    console.log('Filtered Products:', filteredProducts);
 
     const imageUrls = filteredProducts.flatMap(product => product.fullImage);
+
+    console.log('Image URLs:', imageUrls); 
 
   return (
   <div className={`container ${styles.gallery}`}>

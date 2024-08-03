@@ -9,7 +9,7 @@ const ContactUs = () => {
           <svg className={styles.icon}>
             <use href="./img/icons.svg#icon-general-inq"></use>
           </svg>
-          <h2 className={styles.title}>General Inquiry</h2>
+          <h2 className={styles.titleContact}>General Inquiry</h2>
           <p className={styles.text}>If you have any questions, please send an email.</p>
           <Link className={styles.email} to="mailto:littlehomebakery2023@gmail.com">
             Get in touch
@@ -28,7 +28,7 @@ const ContactUs = () => {
               </svg>
             </Link>
           </div>
-          <h2 className={styles.title}>Social media</h2>
+          <h2 className={styles.titleContact}>Social media</h2>
           <p className={styles.text}>Follow our latest news and updates</p>
         </div>
       </div>

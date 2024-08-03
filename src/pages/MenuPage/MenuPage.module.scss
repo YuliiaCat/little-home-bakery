@@ -102,6 +102,7 @@
   height: 25px;
   fill: $dark-grey-color;
   stroke: $dark-grey-color;
+  z-index: 5;
 
   @include on-tablet {
     width: 30px;
