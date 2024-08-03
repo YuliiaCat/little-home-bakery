@@ -75,11 +75,11 @@ const MenuPage = () => {
               onClick={() => handleTrigger(category)}
             >
               {activeCategory === category ? (
-                <svg className={styles.icon}>
+                <svg className={styles.icon} width="25px" height="25px">
                   <use href="./img/icons.svg#icon-up"></use>
                 </svg>
                 ) : (
-                <svg className={styles.icon}>
+                <svg className={styles.icon} width="25px" height="25px">
                   <use href="./img/icons.svg#icon-down"></use>
                 </svg>
               )}
