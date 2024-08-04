@@ -15,32 +15,29 @@
   position: absolute;
   top: 5%;
   right: 10%;
-  width: 24px;
-  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border: 1px solid $dark-grey-color;
   cursor: pointer;
-
-  @include on-desktop {
-    width: 35px;
-    height: 35px;
-  }
+  padding: 10px;
 
   @include hover(background-color, $pink-color);
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  fill: $dark-grey-color;
-  stroke: $dark-grey-color;
 
   @include on-desktop {
-    width: 25px;
-    height: 25px;
+    padding: 12px 10px;
+  }
+}
+
+.iconClose {
+  width: 14px;
+  height: 14px;
+  fill: $dark-grey-color;
+
+  @include on-desktop {
+    width: 20px;
+    height: 16px;
   }
 }
 
@@ -51,7 +48,7 @@
   justify-content: center;
   width: 300px;
   height: 350px;
-  background-image: url('/img/about-us.jpg');
+  background-image: url('/img/contact-us.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 15px;

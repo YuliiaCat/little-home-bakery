@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styles from './BurgerMenu.module.scss';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Modal from '../Modal/Modal';
 
 type Props = {
   isOpen: boolean,
@@ -8,6 +9,10 @@ type Props = {
 }
 
 const BurgerMenu: React.FC<Props> = ({ isOpen, onClose }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
 useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
@@ -51,12 +56,13 @@ useEffect(() => {
           <li className={styles.item}>
             <NavLink
               className={styles.link}
-              to="contact-us"
-              onClick={onClose}
+              to="#"
+              onClick={openModal}
             >
               Contact us
             </NavLink>
           </li>
+          {isModalOpen && <Modal onClose={closeModal} />}
         </ul>
       </nav>
       </div>

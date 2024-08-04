@@ -19,7 +19,7 @@ const Modal: React.FC<Props> = ({ onClose }) => {
   return ReactDOM.createPortal (
     <div className={styles.modal}>
       <button className={styles.btnClose} onClick={onClose}>
-        <svg className={styles.icon}>
+        <svg className={styles.iconClose}>
           <use href="img/icons.svg#icon-close"></use>
         </svg>
       </button>

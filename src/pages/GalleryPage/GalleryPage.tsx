@@ -5,14 +5,17 @@ import { Product } from '../../types/Product';
 import classNames from 'classnames';
 import iziToast from 'izitoast';
 import { getProducts } from '../../services/products';
+import Loader from '../../components/Loader/Loader';
 
 const GalleryPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [activeCategory, setActiveCategory] = useState<ProductType | null>(ProductType.cakes);
   const [error, setError] = useState<string>('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchProducts = async () => {
     setError('');
+    setIsLoading(true);
     try {
       const fetchedProducts = await getProducts();
 
@@ -25,7 +28,10 @@ const GalleryPage = () => {
         position: 'topRight',
       });
       console.log(err);
-    }
+
+      } finally {
+        setIsLoading(false);
+      }
   };
 
   useEffect(() => {
@@ -67,11 +73,20 @@ const GalleryPage = () => {
         </li>
           ))}
       </ul>
+      {isLoading && <Loader />}
       <ul className={styles.photoList}>
         {imageUrls.length && !error ? (
             imageUrls.map((url, index) => (
-              <li key={index} className={styles.photoItem}>
-                <img className={styles.photo} src={url} alt={`Product ${index}`} />
+              <li 
+                key={index} 
+                className={classNames(styles.photoItem, {
+                  [styles.isLoading]: isLoading,
+                })}>
+                <img 
+                  className={styles.photo} 
+                  src={url} 
+                  alt={`Product ${index}`}
+                />
               </li>
             ))
           ) : (

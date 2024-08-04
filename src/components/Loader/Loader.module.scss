@@ -1,0 +1,33 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 32px;
+
+  &::before,
+  &::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px $dark-grey-color inset;
+  }
+
+  &::after {
+    box-shadow: 0 2px 0 $pink-color inset;
+    animation: rotate 2s linear infinite;
+  }
+}
+
+.text {
+  font-size: 12px;
+  color: $main-text-color;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
+}

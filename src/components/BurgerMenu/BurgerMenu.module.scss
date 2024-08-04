@@ -11,6 +11,10 @@
   background-color: $bgc-theme;
   pointer-events: none;
   margin-top: 83px;
+
+  @include on-tablet {
+    margin-top: 103px;
+  }
 }
 
 .isOpen {
@@ -43,5 +47,7 @@
   color: $main-text-color;
   font-weight: 500;
 
-  @include hover(text-shadow, 0 2px 15px $pink-color);
+  @include on-tablet {
+    font-size: 24px;
+  }
 }
