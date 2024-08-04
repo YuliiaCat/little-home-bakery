@@ -49,13 +49,13 @@
   {
     "id": 5,
     "category": "cakes",
-    "itemId": "mandaline-cake",
-    "name": "Mandaline cake",
+    "itemId": "madeleine-cake",
+    "name": "Madeleine cake",
     "sizeAvailable": ["15cm"],
     "size": "15cm",
     "price": 80,
-    "image": "img/cakes/mandaline-cake.webp",
-    "fullImage": ["img/cakes/mandaline-cake-full.webp"]
+    "image": "img/cakes/madeleine-cake.webp",
+    "fullImage": ["img/cakes/madeleine-cake-full.webp"]
   },
   {
     "id": 6,
