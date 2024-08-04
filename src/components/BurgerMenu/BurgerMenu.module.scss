@@ -48,6 +48,6 @@
   font-weight: 500;
 
   @include on-tablet {
-    font-size: 24px;
+    font-size: $font-size-24px;
   }
 }

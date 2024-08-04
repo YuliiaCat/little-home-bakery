@@ -4,7 +4,7 @@
   @include on-desktop {
     display: flex;
     gap: 50px;
-    font-size: 20px;
+    font-size: $font-size-20px;
   }
 }
 

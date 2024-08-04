@@ -103,7 +103,7 @@
       0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: all 0.3s ease-in-out;
 
-  @include hover(background-color, $light-green-color, box-shadow, 0px 10px 20px -10px rgba(0, 0, 0, 0.5));
+  @include hover(background-color, $light-green-color, box-shadow, 0px 10px 20px -10px $shadow-color);
 
   &:focus {
     background-color: $light-green-color;
@@ -125,12 +125,12 @@
 }
 
 .exploreMenuLink {
-  font-size: 20px;
+  font-size: $font-size-20px;
   text-decoration: none;
   color: $main-text-color;
 
   @include on-desktop {
-    font-size: 24px;
+    font-size: $font-size-24px;
   }
 }
 
@@ -145,7 +145,7 @@
   }
 
   @include on-desktop {
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px -10px $shadow-color;
   }
 }
 
@@ -204,7 +204,7 @@
   @include on-desktop {
     grid-row: 2 / 3;
     grid-column: 8 / span 3;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px -10px $shadow-color;
   }
 }
 
@@ -215,7 +215,7 @@
     display: block;
     grid-column: 1 / span 3;
     grid-row: 2 / 3;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px -10px $shadow-color;
     height: 100%;
   }
 }
@@ -227,7 +227,7 @@
     display: block;
     grid-column: 4 / span 4;
     grid-row: 2;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px -10px $shadow-color;
     height: 100%;
   }
 }

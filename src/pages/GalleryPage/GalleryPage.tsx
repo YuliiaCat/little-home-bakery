@@ -1,5 +1,5 @@
 import styles from './GalleryPage.module.scss';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ProductType } from '../../types/ProductType';
 import { Product } from '../../types/Product';
 import classNames from 'classnames';
@@ -13,13 +13,12 @@ const GalleryPage = () => {
   const [error, setError] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const fetchProducts = async () => {
+  const fetchProducts = useCallback(async () => {
     setError('');
     setIsLoading(true); 
 
     try {
       const fetchedProducts = await getProducts();
-
       setProducts(fetchedProducts);
     } catch (err) {
       setError('Can\'t load data');
@@ -33,28 +32,39 @@ const GalleryPage = () => {
       } finally {
         setIsLoading(false);
       }
-  };
+  }, []);
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [fetchProducts]);
 
-  const categories = [
+  const categories = useMemo(
+    () => [
       ProductType.cakes,
       ProductType.bento,
       ProductType.macarons,
       ProductType.cupcakes,
       ProductType.macarons_box,
-      ProductType.eclairs
-    ];
+      ProductType.eclairs,
+    ],
+    []
+  );
 
-  const filteredProducts = activeCategory
-    ? products.filter(product => product.category === activeCategory)
-    : products;
+  const filteredProducts = useMemo(
+    () =>
+      activeCategory
+        ? products.filter(product => product.category === activeCategory)
+        : products,
+    [activeCategory, products]
+  );
 
-    const imageUrls = filteredProducts.flatMap(product =>
-      product.fullImage.filter(url => url && url.trim() !== '')
-    );
+  const imageUrls = useMemo(
+    () =>
+      filteredProducts.flatMap(product =>
+        product.fullImage.filter(url => url && url.trim() !== '')
+      ),
+    [filteredProducts]
+  );
 
   return (
   <div className={`container ${styles.gallery}`}>
@@ -88,6 +98,7 @@ const GalleryPage = () => {
                   })}
                   src={url} 
                   alt={`Product ${index}`}
+                  loading="lazy"
                 />
               </li>
             ))
