@@ -15,7 +15,8 @@ const GalleryPage = () => {
 
   const fetchProducts = async () => {
     setError('');
-    setIsLoading(true);
+    setIsLoading(true); 
+
     try {
       const fetchedProducts = await getProducts();
 
@@ -75,15 +76,16 @@ const GalleryPage = () => {
       </ul>
       {isLoading && <Loader />}
       <ul className={styles.photoList}>
-        {imageUrls.length && !error ? (
+        {imageUrls.length && !error && !isLoading ? (
             imageUrls.map((url, index) => (
               <li 
                 key={index} 
-                className={classNames(styles.photoItem, {
-                  [styles.isLoading]: isLoading,
-                })}>
+                className={styles.photoItem}
+                >
                 <img 
-                  className={styles.photo} 
+                  className={classNames(styles.photo, {
+                    [styles.isLoading]: !isLoading,
+                  })}
                   src={url} 
                   alt={`Product ${index}`}
                 />
